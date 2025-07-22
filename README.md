@@ -1,5 +1,18 @@
-# Vue 3 + TypeScript + Vite
+# Portfolio
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## TODO
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+- [ ] Add a necessary packages
+  - [ ] i18n
+  - [ ] vuetify
+  - [ ] mdi
+  - [ ] vue-router
+  - [ ] pinia
+  - [ ] axios
+  - see
+    - [vuemastery.com](https://www.vuemastery.com/blog/most-popular-vuejs-plugins-and-packages/)
+    - [jimohsherifdeen.medium.com](https://jimohsherifdeen.medium.com/dependencies-you-must-know-as-vuejs-developer-8ecc26a0119b)
+- [ ] [Mock the project](https://excalidraw.com/#json=vFQj65gs9Yb1PXfDlRRt9,q8pk7PFTXz6EnpTDzgrFWg)
+- features
+  - [ ] dark 
+  - [ ] dark mode
