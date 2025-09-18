@@ -4,7 +4,7 @@
 
 - [ ] Add a necessary packages
   - [ ] i18n
-  - [ ] vuetify
+  - [ ] [daisyUI](https://daisyui.com/docs/install/vite/) <del>(Vuetify)</del>
   - [ ] mdi
   - [ ] vue-router
   - [ ] pinia
