@@ -1,9 +1,16 @@
 # Portfolio
 
+```bash
+npm run dev
+
+# To access on mobile (if the computer and mobile are on the same network)
+vite --host
+```
+
 ## TODO
 
 - [ ] Add a necessary packages
-  - [ ] i18n
+  - [x] i18n
   - [x] [daisyUI](https://daisyui.com/docs/install/vite/) <del>(Vuetify)</del>
   - [x] mdi
   - [x] vue-router
