@@ -15,7 +15,7 @@
 </template>
 
 <script setup lang="ts">
-import Experiences from "@/atoms/Experiences.vue"
+import Experiences from "@/molecules/Experiences.vue"
 </script>
 
 <style scoped>
