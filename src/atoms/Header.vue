@@ -15,22 +15,22 @@
         <ul
             tabindex="0"
             class="menu dropdown-content bg-base-100 rounded-box z-1 w-auto mt-[3rem] p-0 shadow-sm">
-          <li><a>
+          <li><RouterLink to="/">
             <briefcase-outline-icon class="mb-1"/>
-            <span>{{ $t('header.nav.experiences') }}</span></a></li>
-          <li class="border-t-1 border-solid"><a>
+            <span>{{ $t('header.nav.experiences') }}</span></RouterLink></li>
+          <li class="border-t-1 border-solid"><RouterLink to="/">
             <hammer-wrench-icon class="mb-1"/>
-            <span>{{ $t('header.nav.projects') }}</span></a></li>
+            <span>{{ $t('header.nav.projects') }}</span></RouterLink></li>
         </ul>
       </div>
       <ul class="bg-white border-0 w-auto m-0 p-0 gap-3 text-base font-semibold hidden sm:flex">
         <!-- On Desktop (Mobile menu elements) -->
-        <li class="flex items-center"><a class="flex items-center gap-1">
+        <li class="flex items-center"><RouterLink to="/" class="flex items-center gap-1">
           <briefcase-outline-icon class="mb-[0.75rem] text-4xl"/>
-          <span>{{ $t('header.nav.experiences') }}</span></a></li>
-        <li class="flex items-center"><a class="flex items-center gap-1">
+          <span>{{ $t('header.nav.experiences') }}</span></RouterLink></li>
+        <li class="flex items-center"><RouterLink to="/" class="flex items-center gap-1">
           <hammer-wrench-icon class="mb-[0.75rem] text-4xl"/>
-          <span>{{ $t('header.nav.projects') }}</span></a></li>
+          <span>{{ $t('header.nav.projects') }}</span></RouterLink></li>
       </ul>
       <div class="h-full locale-changer m-0 p-0 focus:outline-none">
         <select class="h-auto m-0 my-[0.5rem] px-1 py-[0.5rem] text-base font-semibold capitalize border-1 border-solid rounded-box"
@@ -44,9 +44,10 @@
   </header>
 </template>
 
-<script setup lang="js">
+<script setup lang="ts">
 import MenuIcon from 'vue-material-design-icons/Menu.vue'
 import XmlIcon from 'vue-material-design-icons/Xml.vue'
 import HammerWrenchIcon from 'vue-material-design-icons/HammerWrench.vue'
 import BriefcaseOutlineIcon from 'vue-material-design-icons/BriefcaseOutline.vue'
+import {RouterLink} from "vue-router"
 </script>
