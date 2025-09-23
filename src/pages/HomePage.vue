@@ -12,11 +12,10 @@
     </div>
   </section>
   <Experiences />
+  <Projects />
 </template>
 
 <script setup lang="ts">
 import Experiences from "@/molecules/Experiences.vue"
+import Projects from "@/molecules/Projects.vue"
 </script>
-
-<style scoped>
-</style>

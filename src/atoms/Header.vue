@@ -49,5 +49,4 @@ import MenuIcon from 'vue-material-design-icons/Menu.vue'
 import XmlIcon from 'vue-material-design-icons/Xml.vue'
 import HammerWrenchIcon from 'vue-material-design-icons/HammerWrench.vue'
 import BriefcaseOutlineIcon from 'vue-material-design-icons/BriefcaseOutline.vue'
-import {RouterLink} from "vue-router"
 </script>

@@ -92,5 +92,3 @@ const internShipList: InternShip[] = locale.value === 'en'
       }
     ]
 </script>
-
-<style scoped></style>

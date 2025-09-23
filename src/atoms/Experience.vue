@@ -86,5 +86,3 @@ const randomTechnologies = () => {
       .slice(0, 3)
 }
 </script>
-
-<style scoped></style>

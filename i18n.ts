@@ -25,8 +25,15 @@ export const i18n = createI18n({
                 mobility: "France entière",
                 experience: {
                     title: "Expériences professionnelles",
+                },
+                projects: {
+                    title: "Projets",
+                    seeCode: {
+                        title: "Code",
+                        desc: "Voir le code"
+                    },
                 }
-            }
+            },
         },
         en: {
             abbreviation: 'En',
@@ -49,8 +56,15 @@ export const i18n = createI18n({
                 mobility: "France-wide",
                 experience: {
                     title: "Work Experience",
+                },
+                projects: {
+                    title: "Projects",
+                    seeCode: {
+                        title: "Code",
+                        desc: "See the code"
+                    },
                 }
-            }
+            },
         }
     }
 })
