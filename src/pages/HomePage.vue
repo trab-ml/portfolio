@@ -1,7 +1,7 @@
 <template>
-  <section class="sm:flex">
-    <h1 class="text-3xl font-bold sm:mt-2">{{$t('homepage.title.partOne')}} <span class="text-3xl font-light">{{$t('homepage.title.partTwo')}}</span></h1>
-    <div class="mockup-code w-full mt-1 sm:w-fit sm:mt-12">
+  <section class="flex flex-col items-center sm:flex-row sm:items-start">
+    <h1 class="text-3xl font-bold sm:w-1/3 sm:mt-2 md:w-full">{{$t('homepage.title.partOne')}} <span class="text-3xl font-light">{{$t('homepage.title.partTwo')}}</span></h1>
+    <div class="mockup-code w-full mt-1 sm:w-2/3 md:w-full sm:mt-12">
       <pre data-prefix="1"><code>const profile = {</code></pre>
       <pre data-prefix="2" class="text-info"><code>"firstname": "{{$t('homepage.firstname')}}",</code></pre>
       <pre data-prefix="3" class="text-info"><code>"lastname": "{{$t('homepage.lastname')}}",</code></pre>

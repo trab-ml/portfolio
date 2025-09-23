@@ -15,17 +15,30 @@
         />
       </svg>
     </div>
-    <div :class="`${style} p-2 border-1 rounded-box hover:bg-gray-100 hover:cursor-pointer`" @click="handleClick">
+    <div :class="`${style} md:mb-10 p-2 border-1 rounded-box hover:bg-gray-100 hover:cursor-pointer`"
+         @click="handleClick">
       <time class="font-mono italic">{{ `${experience.startDate} - ${experience.endDate}` }}</time>
       <div class="text-lg font-black">{{ experience.title }}</div>
-      {{ experience.description }}
     </div>
     <hr/>
   </li>
   <dialog :id="modalId" class="modal">
     <div class="modal-box">
-      <h3 class="text-lg font-bold">Hello!</h3>
-      <p class="py-4">Press ESC key or click outside to close</p>
+      <h3 class="text-md font-semibold md:text-lg">
+        {{ experience.title }} -
+
+        <a v-if="experience.companyWebsite" :href="experience.companyWebsite" target="_blank"
+           class="cursor-pointer"><span
+            class="underline underline-offset-2 hover:no-underline text-sm font-normal md:text-md">{{ experience.company }}</span></a>
+        <span v-else class="text-sm font-normal md:text-md">{{ experience.company }}</span>
+
+        <span class="text-xs font-normal md:text-sm"> ({{ experience.period }})</span>
+      </h3>
+      <div class="py-1">
+        <span v-for="(tech, idx) in randomTechnologies()" :key="idx"
+              class="badge badge-sm badge-neutral mr-1 md:badge-md">{{ tech }}</span>
+      </div>
+      <p class="text-sm md:text-lg py-1">{{ experience.description }}</p>
       <button
           class="p-1 text-3xl text-red-600 font-light btn btn-sm btn-circle btn-ghost hover:font-semibold absolute right-2 top-2"
           @click="closeModal">X
@@ -45,6 +58,7 @@ const props = defineProps<{
   experience: {
     title: string;
     company: string;
+    companyWebsite?: string;
     startDate: string;
     endDate: string | null;
     period: string;
@@ -64,6 +78,12 @@ const handleClick = () => {
 const closeModal = () => {
   const modal = document.getElementById(modalId.value) as HTMLDialogElement
   modal?.close()
+}
+
+const randomTechnologies = () => {
+  return props.experience.technologies
+      .sort(() => 0.5 - Math.random())
+      .slice(0, 3)
 }
 </script>
 
