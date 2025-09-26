@@ -52,19 +52,11 @@
 
 <script setup lang="ts">
 import {ref} from "vue";
+import {type TInternShip} from "@/types/utils.ts"
 
 const props = defineProps<{
   index: number,
-  experience: {
-    title: string;
-    company: string;
-    companyWebsite?: string;
-    startDate: string;
-    endDate: string | null;
-    period: string;
-    description: string;
-    technologies: string[];
-  },
+  experience: TInternShip,
   style: string
 }>();
 

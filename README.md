@@ -7,7 +7,21 @@ npm run dev
 vite --host
 ```
 
+## TODO
+
+(18mns,)
+- [x] Download projects images
+- [ ] Deal with i18n issues (miss of reactivity (even not translation) when changing language)
+- [ ] Implement project filtering section
+- [ ] Enhance the footer (add an anchor to the navlinks)
+- [ ] Schematize the project big-picture
+- [ ] Deploy the website
+
+## Mock
 ![Portfolio Screenshot](./src/assets/mock.png)
+
+## Alive-Mock
+![Portfolio Screenshot](./src/assets/alive-mock.png)
 
 ## Resources
   - [Atomic design](https://bradfrost.com/blog/post/atomic-web-design/)

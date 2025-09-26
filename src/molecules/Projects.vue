@@ -9,134 +9,163 @@
 
 <script setup lang="ts">
 import Project from "@/atoms/Project.vue"
+import {Category} from "@/types/utils.ts"
+import {type TProject} from "@/types/utils.ts"
+import {computed} from "vue"
+import {useI18n} from "vue-i18n"
 
-type Project = {
-  id: number
-  title: string
-  description: string
-  imageUrl: string
-  projectUrl?: string
-  repositoryUrl?: string
-  secondRepositoryUrl?: string
-  category: string
-  technologies: string[]
-}
+const { locale } = useI18n()
 
-const projectList: Project[] = [
+const descriptionsInFrench = new Map<number, string>([
+  [1, "Solution web de prise de notes avec fonctionnalité hors-ligne."],
+  [2, "Application mobile de gestion de repas."],
+  [3, "Application web permettant de déterminer les indices de performance d'une ville et éventuellement d'une rue données."],
+  [4, "Solution web permettant de gérer le planning d'un établissement scolaire."],
+  [5, "Interpréteur Lisp (langage de programmation impératif et fonctionnel) écrit en Java."],
+  [6, "Projet d'études visant à implémenter un classificateur avec l'algorithme de l'arbre de décision."],
+  [7, "Intégration front visant à concevoir un site vitrine de restaurant."],
+  [8, "Intégration front ayant pour but de concevoir un site vitrine d'entreprise."],
+  [9, "Site vitrine d'une agence immobilière."],
+  [10, "Squelette de Dashboard pour Admin."],
+  [11, "Intégration du site web d'une agence immobilière."],
+])
+
+const descriptionsInEnglish = new Map<number, string>([
+  [1, "Web note-taking solution with offline functionality."],
+  [2, "Mobile application for meal management."],
+  [3, "Web application to determine the performance indices of a given city and possibly a street."],
+  [4, "Web solution to manage the schedule of an educational institution."],
+  [5, "Lisp interpreter (imperative and functional programming language) written in Java."],
+  [6, "Study project aiming to implement a classifier using the decision tree algorithm."],
+  [7, "Front-end integration to design a restaurant showcase website."],
+  [8, "Front-end integration aimed at designing a corporate showcase website."],
+  [9, "Showcase site for a real estate agency."],
+  [10, "Admin Dashboard skeleton."],
+  [11, "Integration of a real estate agency's website."],
+])
+
+const descriptionMap = computed(() => {
+  console.log(locale)
+  return locale.value === 'fr'
+      ? descriptionsInFrench
+      : descriptionsInEnglish
+})
+
+const projectList: TProject[] = [
   {
     id: 1,
     title: "Notesapp",
-    description: "Solution web de prise de notes avec fonctionnalité hors-ligne.",
-    imageUrl: "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
+    description: descriptionMap.value.get(1) || "",
+    imageUrl: "notesapp.png",
     projectUrl: "https://notesapp-f639b.web.app/",
     repositoryUrl: "https://github.com/trab-ml/notesapp",
-    category: "Front",
+    category: Category.FRONT,
     technologies: ["React", "TypeScript", "Firebase"],
   },
   {
     id: 2,
     title: "Fammeal",
-    description: "Application mobile de gestion de repas.",
-    imageUrl: "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
+    description: descriptionMap.value.get(2) || "",
+    imageUrl: "project-default-img.png",
     repositoryUrl: "https://github.com/trab-ml/fammeal-front",
     secondRepositoryUrl: "https://github.com/trab-ml/fammeal-back",
-    category: "Front",
+    category: Category.FRONT,
     technologies: ["Android Studio", "Java", "Openapi Generator"],
   },
   {
     id: 3,
     title: "DPEWeb",
-    description: "Application web permettant de déterminer les indices de performance d'une ville et éventuellement d'une rue données.",
-    imageUrl: "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
+    description: descriptionMap.value.get(3) || "",
+    imageUrl: "project-default-img.png",
     repositoryUrl: "https://github.com/trab-ml/DPEWeb_Broutin_Traore",
-    category: "Fullstack",
+    category: Category.FULLSTACK,
     technologies: ["JSP", "Java", "SQL"],
   },
   {
     id: 4,
     title: "JPP",
-    description: "Solution web permettant d'accéder au planning d'un établissement scolaire.",
-    imageUrl: "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
+    description: descriptionMap.value.get(4) || "",
+    imageUrl: "project-default-img.png",
     repositoryUrl: "https://github.com/trab-ml/jpp",
-    category: "Fullstack",
+    category: Category.FULLSTACK,
     technologies: ["JavaScript", "Php", "MySQL"],
   },
   {
     id: 5,
-    title: "Lisp interpreter",
-    description: "Interpréteur Lisp (langage de programmation impératif et fonctionnel) écrit en Java.",
-    imageUrl: "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
+    title: "Lisp",
+    description: descriptionMap.value.get(5) || "",
+    imageUrl: "project-default-img.png",
     repositoryUrl: "https://github.com/trab-ml/lisp?tab=readme-ov-file",
-    category: "Algorithm",
+    category: Category.ALGORITHM,
     technologies: ["Java"],
   },
   {
     id: 6,
     title: "Classifier",
-    description: "Projet d'études visant à implémenter un classificateur avec l'algorithme de l'arbre de décision.",
-    imageUrl: "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
+    description: descriptionMap.value.get(6) || "",
+    imageUrl: "classifier.png",
     repositoryUrl: "https://github.com/trab-ml/classifier",
-    category: "Machine Learning",
-    technologies: ["Java"],
+    category: Category.AI,
+    technologies: ["Python", "Pandas", "Scikit-learn"],
   },
   {
     id: 7,
     title: "Spicy Food",
-    description: "Intégration front visant à concevoir un site vitrine de restaurant.",
-    imageUrl: "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
+    description: descriptionMap.value.get(7) || "",
+    imageUrl: "spicy-food.png",
     projectUrl: "https://trab-ml.github.io/spicy-food/",
     repositoryUrl: "https://github.com/trab-ml/spicy-food",
-    category: "Front",
+    category: Category.FRONT,
     technologies: ["HTML", "JavaScript", "Tailwind CSS"],
   },
   {
     id: 8,
     title: "TheBox",
-    description: "Intégration front ayant pour but de concevoir un site vitrine d'entreprise.",
-    imageUrl: "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
+    description: descriptionMap.value.get(8) || "",
+    imageUrl: "the-box.png",
     projectUrl: "https://trab-ml.github.io/landing-page/",
     repositoryUrl: "https://github.com/trab-ml/landing-page?tab=readme-ov-file",
-    category: "Front",
+    category: Category.FRONT,
     technologies: ["HTML", "CSS", "SASS"],
   },
   {
-    id: 8,
+    id: 9,
     title: "Dream Bank",
-    description: "Intégration front ayant pour but de concevoir un site vitrine d'entreprise.",
-    imageUrl: "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
+    description: descriptionMap.value.get(9) || "",
+    imageUrl: "dream-bank.png",
     projectUrl: "https://trab-ml.github.io/stdb/",
     repositoryUrl: "https://github.com/trab-ml/stdb/tree/master?tab=readme-ov-file",
-    category: "Front",
+    category: Category.FRONT,
     technologies: ["React", "CSS"],
   },
   {
-    id: 9,
+    id: 10,
     title: "DreamImmo",
-    description: "Site vitrine d'une agence immobilière.",
-    imageUrl: "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
+    description: descriptionMap.value.get(10) || "",
+    imageUrl: "dream-immo.png",
     projectUrl: "https://trab-ml.github.io/Dreamhome/",
     repositoryUrl: "https://github.com/trab-ml/stdb/tree/master?tab=readme-ov-file",
-    category: "Front",
+    category: Category.FRONT,
     technologies: ["HTML", "CSS", "SASS", "JavaScript"],
   },
   {
-    id: 10,
-    title: "Admin Dashboard",
-    description: "Squelette de Dashboard pour admin.",
-    imageUrl: "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
+    id: 11,
+    title: "ADash",
+    description: descriptionMap.value.get(11) || "",
+    imageUrl: "a-dash.png",
     projectUrl: "https://trab-ml.github.io/css-dashboard/",
     repositoryUrl: "https://github.com/trab-ml/css-dashboard?tab=readme-ov-file",
-    category: "Front",
+    category: Category.FRONT,
     technologies: ["HTML", "CSS"],
   },
   {
-    id: 11,
-    title: "DreamHome",
-    description: "Intégration du site web d'une agence immobilière.",
-    imageUrl: "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
+    id: 12,
+    title: "Dream Home",
+    description: descriptionMap.value.get(12) || "",
+    imageUrl: "dream-home.png",
     projectUrl: "https://trab-ml.github.io/dream-home/",
     repositoryUrl: "https://github.com/trab-ml/dream-home",
-    category: "Front",
+    category: Category.FRONT,
     technologies: ["React", "CSS", "Bootstrap"],
   },
 ]

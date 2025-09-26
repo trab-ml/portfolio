@@ -12,17 +12,7 @@
 <script setup lang="ts">
 import Experience from "@/atoms/Experience.vue"
 import {useI18n} from "vue-i18n"
-
-type InternShip = {
-  title: string;
-  company: string;
-  companyWebsite?: string;
-  startDate: string;
-  endDate: string | null;
-  period: string;
-  description: string;
-  technologies: string[];
-}
+import {type InternShip} from "@/types/utils.ts"
 
 const {locale} = useI18n()
 
