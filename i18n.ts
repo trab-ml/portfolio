@@ -11,7 +11,8 @@ export const i18n = createI18n({
                 nav: {
                     menu: 'Menu',
                     experiences: 'Expériences',
-                    projects: 'Projets'
+                    projects: 'Projets',
+                    contact: 'Contactez-moi'
                 }
             },
             homepage: {
@@ -24,6 +25,7 @@ export const i18n = createI18n({
                 job: "Développeur Web Full Stack",
                 status: "Disponible pour travailler",
                 mobility: "France entière",
+                downloadTheCV: "Télécharger le CV",
                 experience: {
                     title: "Expériences professionnelles",
                 },
@@ -43,7 +45,8 @@ export const i18n = createI18n({
                 nav: {
                     menu: 'Menu',
                     experiences: 'Experiences',
-                    projects: 'Projects'
+                    projects: 'Projects',
+                    contact: 'Contact me'
                 }
             },
             homepage: {
@@ -56,6 +59,7 @@ export const i18n = createI18n({
                 job: "Full Stack Web Developer",
                 status: "Open to work",
                 mobility: "France-wide",
+                downloadTheCV: "Download CV",
                 experience: {
                     title: "Work Experience",
                 },

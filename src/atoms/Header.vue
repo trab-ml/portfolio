@@ -21,6 +21,9 @@
           <li class="border-t-1 border-solid"><a href="#projects">
             <hammer-wrench-icon class="mb-1"/>
             <span>{{ $t('header.nav.projects') }}</span></a></li>
+          <li class="border-t-1 border-solid"><a href="#footer">
+            <account-tie-icon class="mb-1"/>
+            <span>{{ $t('header.nav.contact') }}</span></a></li>
         </ul>
       </div>
       <ul class="bg-white border-0 w-auto m-0 p-0 gap-3 text-base font-semibold hidden sm:flex">
@@ -31,6 +34,9 @@
         <li class="flex items-center"><a href="#projects" class="flex items-center gap-1">
           <hammer-wrench-icon class="mb-[0.75rem] text-4xl"/>
           <span>{{ $t('header.nav.projects') }}</span></a></li>
+        <li class="flex items-center"><a href="#footer" class="flex items-center gap-1">
+          <account-tie-icon class="mb-[0.75rem] text-4xl"/>
+          <span>{{ $t('header.nav.contact') }}</span></a></li>
       </ul>
       <div class="h-full locale-changer m-0 p-0 focus:outline-none">
         <select class="h-auto m-0 my-[0.5rem] px-1 py-[0.5rem] text-base font-semibold capitalize border-1 border-solid rounded-box cursor-pointer"
@@ -49,4 +55,5 @@ import MenuIcon from 'vue-material-design-icons/Menu.vue'
 import XmlIcon from 'vue-material-design-icons/Xml.vue'
 import HammerWrenchIcon from 'vue-material-design-icons/HammerWrench.vue'
 import BriefcaseOutlineIcon from 'vue-material-design-icons/BriefcaseOutline.vue'
+import AccountTieIcon from 'vue-material-design-icons/AccountTie.vue'
 </script>
