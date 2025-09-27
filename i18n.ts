@@ -33,6 +33,7 @@ export const i18n = createI18n({
                         title: "Code",
                         desc: "Voir le code"
                     },
+                    noMatchingProject: "Aucun projet correspondant"
                 }
             },
         },
@@ -64,6 +65,7 @@ export const i18n = createI18n({
                         title: "Code",
                         desc: "See the code"
                     },
+                    noMatchingProject: "No matching project"
                 }
             },
         }
