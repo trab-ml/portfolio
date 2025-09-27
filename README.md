@@ -11,7 +11,7 @@ vite --host
 
 (18mns,)
 - [x] Download projects images
-- [ ] Deal with i18n issues (miss of reactivity (even not translation) when changing language)
+- [x] Deal with i18n issues (miss of reactivity (even not translation) when changing language + externalize static data [projects + experience])
 - [ ] Implement project filtering section
 - [ ] Enhance the footer (add an anchor to the navlinks)
 - [ ] Schematize the project big-picture

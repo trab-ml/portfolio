@@ -35,7 +35,7 @@
         <span class="text-xs font-normal md:text-sm"> ({{ experience.period }})</span>
       </h3>
       <div class="py-1">
-        <span v-for="(tech, idx) in randomTechnologies()" :key="idx"
+        <span v-for="(tech, idx) in randomTechnologies" :key="idx"
               class="badge badge-sm badge-neutral mr-1 md:badge-md">{{ tech }}</span>
       </div>
       <p class="text-sm md:text-lg py-1">{{ experience.description }}</p>
@@ -58,7 +58,7 @@ const props = defineProps<{
   index: number,
   experience: TInternShip,
   style: string
-}>();
+}>()
 
 const modalId = ref(`modal-${props.index}`)
 

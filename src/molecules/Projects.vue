@@ -2,6 +2,7 @@
   <section id="projects" class="py-2">
     <h2 class="text-3xl text-center my-8">{{$t('homepage.projects.title')}}</h2>
     <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+      {{updateDescriptions}}
       <Project v-for="p in projectList" :project="p" :key="p.id"/>
     </div>
   </section>
@@ -9,164 +10,18 @@
 
 <script setup lang="ts">
 import Project from "@/atoms/Project.vue"
-import {Category} from "@/types/utils.ts"
-import {type TProject} from "@/types/utils.ts"
+import { projectList, descriptionMap, descriptionsInFrench, descriptionsInEnglish } from "@/data/projects.ts"
 import {computed} from "vue"
 import {useI18n} from "vue-i18n"
+import type {TProject} from "@/types/utils.ts"
 
 const { locale } = useI18n()
 
-const descriptionsInFrench = new Map<number, string>([
-  [1, "Solution web de prise de notes avec fonctionnalité hors-ligne."],
-  [2, "Application mobile de gestion de repas."],
-  [3, "Application web permettant de déterminer les indices de performance d'une ville et éventuellement d'une rue données."],
-  [4, "Solution web permettant de gérer le planning d'un établissement scolaire."],
-  [5, "Interpréteur Lisp (langage de programmation impératif et fonctionnel) écrit en Java."],
-  [6, "Projet d'études visant à implémenter un classificateur avec l'algorithme de l'arbre de décision."],
-  [7, "Intégration front visant à concevoir un site vitrine de restaurant."],
-  [8, "Intégration front ayant pour but de concevoir un site vitrine d'entreprise."],
-  [9, "Site vitrine d'une agence immobilière."],
-  [10, "Squelette de Dashboard pour Admin."],
-  [11, "Intégration du site web d'une agence immobilière."],
-])
-
-const descriptionsInEnglish = new Map<number, string>([
-  [1, "Web note-taking solution with offline functionality."],
-  [2, "Mobile application for meal management."],
-  [3, "Web application to determine the performance indices of a given city and possibly a street."],
-  [4, "Web solution to manage the schedule of an educational institution."],
-  [5, "Lisp interpreter (imperative and functional programming language) written in Java."],
-  [6, "Study project aiming to implement a classifier using the decision tree algorithm."],
-  [7, "Front-end integration to design a restaurant showcase website."],
-  [8, "Front-end integration aimed at designing a corporate showcase website."],
-  [9, "Showcase site for a real estate agency."],
-  [10, "Admin Dashboard skeleton."],
-  [11, "Integration of a real estate agency's website."],
-])
-
-const descriptionMap = computed(() => {
-  console.log(locale)
-  return locale.value === 'fr'
+const updateDescriptions = computed(() => {
+  descriptionMap.value = locale.value === 'fr'
       ? descriptionsInFrench
       : descriptionsInEnglish
+  projectList.value.map((p: TProject) =>
+      p.description = descriptionMap.value.get(p.id) || "")
 })
-
-const projectList: TProject[] = [
-  {
-    id: 1,
-    title: "Notesapp",
-    description: descriptionMap.value.get(1) || "",
-    imageUrl: "notesapp.png",
-    projectUrl: "https://notesapp-f639b.web.app/",
-    repositoryUrl: "https://github.com/trab-ml/notesapp",
-    category: Category.FRONT,
-    technologies: ["React", "TypeScript", "Firebase"],
-  },
-  {
-    id: 2,
-    title: "Fammeal",
-    description: descriptionMap.value.get(2) || "",
-    imageUrl: "project-default-img.png",
-    repositoryUrl: "https://github.com/trab-ml/fammeal-front",
-    secondRepositoryUrl: "https://github.com/trab-ml/fammeal-back",
-    category: Category.FRONT,
-    technologies: ["Android Studio", "Java", "Openapi Generator"],
-  },
-  {
-    id: 3,
-    title: "DPEWeb",
-    description: descriptionMap.value.get(3) || "",
-    imageUrl: "project-default-img.png",
-    repositoryUrl: "https://github.com/trab-ml/DPEWeb_Broutin_Traore",
-    category: Category.FULLSTACK,
-    technologies: ["JSP", "Java", "SQL"],
-  },
-  {
-    id: 4,
-    title: "JPP",
-    description: descriptionMap.value.get(4) || "",
-    imageUrl: "project-default-img.png",
-    repositoryUrl: "https://github.com/trab-ml/jpp",
-    category: Category.FULLSTACK,
-    technologies: ["JavaScript", "Php", "MySQL"],
-  },
-  {
-    id: 5,
-    title: "Lisp",
-    description: descriptionMap.value.get(5) || "",
-    imageUrl: "project-default-img.png",
-    repositoryUrl: "https://github.com/trab-ml/lisp?tab=readme-ov-file",
-    category: Category.ALGORITHM,
-    technologies: ["Java"],
-  },
-  {
-    id: 6,
-    title: "Classifier",
-    description: descriptionMap.value.get(6) || "",
-    imageUrl: "classifier.png",
-    repositoryUrl: "https://github.com/trab-ml/classifier",
-    category: Category.AI,
-    technologies: ["Python", "Pandas", "Scikit-learn"],
-  },
-  {
-    id: 7,
-    title: "Spicy Food",
-    description: descriptionMap.value.get(7) || "",
-    imageUrl: "spicy-food.png",
-    projectUrl: "https://trab-ml.github.io/spicy-food/",
-    repositoryUrl: "https://github.com/trab-ml/spicy-food",
-    category: Category.FRONT,
-    technologies: ["HTML", "JavaScript", "Tailwind CSS"],
-  },
-  {
-    id: 8,
-    title: "TheBox",
-    description: descriptionMap.value.get(8) || "",
-    imageUrl: "the-box.png",
-    projectUrl: "https://trab-ml.github.io/landing-page/",
-    repositoryUrl: "https://github.com/trab-ml/landing-page?tab=readme-ov-file",
-    category: Category.FRONT,
-    technologies: ["HTML", "CSS", "SASS"],
-  },
-  {
-    id: 9,
-    title: "Dream Bank",
-    description: descriptionMap.value.get(9) || "",
-    imageUrl: "dream-bank.png",
-    projectUrl: "https://trab-ml.github.io/stdb/",
-    repositoryUrl: "https://github.com/trab-ml/stdb/tree/master?tab=readme-ov-file",
-    category: Category.FRONT,
-    technologies: ["React", "CSS"],
-  },
-  {
-    id: 10,
-    title: "DreamImmo",
-    description: descriptionMap.value.get(10) || "",
-    imageUrl: "dream-immo.png",
-    projectUrl: "https://trab-ml.github.io/Dreamhome/",
-    repositoryUrl: "https://github.com/trab-ml/stdb/tree/master?tab=readme-ov-file",
-    category: Category.FRONT,
-    technologies: ["HTML", "CSS", "SASS", "JavaScript"],
-  },
-  {
-    id: 11,
-    title: "ADash",
-    description: descriptionMap.value.get(11) || "",
-    imageUrl: "a-dash.png",
-    projectUrl: "https://trab-ml.github.io/css-dashboard/",
-    repositoryUrl: "https://github.com/trab-ml/css-dashboard?tab=readme-ov-file",
-    category: Category.FRONT,
-    technologies: ["HTML", "CSS"],
-  },
-  {
-    id: 12,
-    title: "Dream Home",
-    description: descriptionMap.value.get(12) || "",
-    imageUrl: "dream-home.png",
-    projectUrl: "https://trab-ml.github.io/dream-home/",
-    repositoryUrl: "https://github.com/trab-ml/dream-home",
-    category: Category.FRONT,
-    technologies: ["React", "CSS", "Bootstrap"],
-  },
-]
 </script>
