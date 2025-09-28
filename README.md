@@ -5,6 +5,10 @@ npm run dev
 
 # To access on mobile (if the computer and mobile are on the same network)
 vite --host
+
+# Build for production
+git subtree add --prefix dist --squash
+git subtree push --prefix dist origin gh-pages
 ```
 
 ## TODO
@@ -34,3 +38,4 @@ vite --host
   - [erasable-syntax-only](https://www.totaltypescript.com/erasable-syntax-only)
   - [TS release note about erasable-syntax-only](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-5-8.html)
   - [defence of ts enum](https://www.reddit.com/r/typescript/comments/1jobls9/defence_of_typescript_enums/)
+  - [Github Gist](https://gist.github.com/SKempin/b7857a6ff6bddb05717cc17a44091202)
