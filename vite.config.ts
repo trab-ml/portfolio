@@ -6,7 +6,7 @@ import {qrcode} from "vite-plugin-qrcode"
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: process.env.NODE_ENV === "production" ? "/" + process.env.REPO_NAME + "/" : "/",
+  // base: process.env.NODE_ENV === "production" ? "/" + process.env.REPO_NAME + "/" : "/",
   plugins: [vue(), tailwindcss(), qrcode()],
   resolve: {
     alias: {
