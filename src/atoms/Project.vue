@@ -3,7 +3,7 @@
     <figure>
       <img
           class="rounded-b-box w-[90%] cursor-pointer transition delay-150 duration-300 ease-in-out hover:scale-112"
-          :src="project.imageUrl"
+          :src="props.project.imageUrl"
           :alt="project.title"/>
     </figure>
     <div class="card-body">
@@ -31,9 +31,9 @@
 </template>
 
 <script setup lang="ts">
-import EyeOutlineIcon from 'vue-material-design-icons/EyeOutline.vue'
-import CodeBracesIcon from 'vue-material-design-icons/CodeBraces.vue'
-import {categoriesColors, type TProject} from "@/types/utils.ts"
+import EyeOutlineIcon from 'icons/EyeOutline.vue'
+import CodeBracesIcon from 'icons/CodeBraces.vue'
+import {categoriesColors, type TProject} from "../types/utils.ts"
 
 const props = defineProps<{
   project: TProject

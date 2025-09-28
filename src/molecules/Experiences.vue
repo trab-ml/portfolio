@@ -11,11 +11,11 @@
 </template>
 
 <script setup lang="ts">
-import Experience from "@/atoms/Experience.vue"
+import Experience from "../atoms/Experience.vue"
 import {useI18n} from "vue-i18n"
-import {type TInternShip} from "@/types/utils.ts"
+import {type TInternShip} from "../types/utils.ts"
 import {computed} from "vue"
-import {fr, en, internShipList, lang} from "@/data/experiences.ts"
+import {fr, en, internShipList, lang} from "../data/experiences.ts"
 
 const {locale} = useI18n()
 
@@ -24,18 +24,6 @@ const updateExperiences = computed(() => {
       ? fr
       : en
   internShipList.value.map((item: TInternShip, index: number) => {
-    // DOES NOT WORK WITH VUE REACTIVITY
-    // WHY ?
-    // const updated = {
-    //   ...item,
-    //   title: lang.value[index].title,
-    //   startDate: lang.value[index].startDate,
-    //   endDate: lang.value[index].endDate,
-    //   period: lang.value[index].period,
-    //   description: lang.value[index].description,
-    // }
-    // return updated
-
     item.title = lang.value[index].title
     item.startDate = lang.value[index].startDate
     item.endDate = lang.value[index].endDate

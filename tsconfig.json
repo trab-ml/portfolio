@@ -8,7 +8,8 @@
   "compilerOptions": {
     "baseUrl": "../",
     "paths": {
-      "@/*": ["./*"]
-    }
+      "@/*": ["./src/*"],
+      "icons": ["./node_modules/vue-material-design-icons"],
+    },
   },
 }

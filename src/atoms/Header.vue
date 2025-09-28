@@ -51,9 +51,9 @@
 </template>
 
 <script setup lang="ts">
-import MenuIcon from 'vue-material-design-icons/Menu.vue'
-import XmlIcon from 'vue-material-design-icons/Xml.vue'
-import HammerWrenchIcon from 'vue-material-design-icons/HammerWrench.vue'
-import BriefcaseOutlineIcon from 'vue-material-design-icons/BriefcaseOutline.vue'
-import AccountTieIcon from 'vue-material-design-icons/AccountTie.vue'
+import MenuIcon from "icons/Menu.vue"
+import XmlIcon from 'icons/Xml.vue'
+import HammerWrenchIcon from 'icons/HammerWrench.vue'
+import BriefcaseOutlineIcon from 'icons/BriefcaseOutline.vue'
+import AccountTieIcon from 'icons/AccountTie.vue'
 </script>

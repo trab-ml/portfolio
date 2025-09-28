@@ -1,10 +1,12 @@
-export enum Category {
-    FRONT = "Front",
-    BACK = "Back",
-    FULLSTACK = "Fullstack",
-    ALGORITHM = "Algorithm",
-    AI = "AI",
+export const Category = {
+    FRONT: "Front",
+    BACK: "Back",
+    FULLSTACK: "Fullstack",
+    ALGORITHM: "Algorithm",
+    AI: "AI",
 }
+
+export type Category = (typeof Category)[keyof typeof Category]
 
 export type TProject = {
     id: number

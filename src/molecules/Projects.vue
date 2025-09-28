@@ -6,7 +6,7 @@
              :aria-label="item" class="btn border-1 border-solid border-black text-base font-light checked:border-0"/>
       <input class="btn btn-square border-black" type="reset" value="×" @click="resetFilters"/>
     </form>
-    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-4">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-4">
       {{ updateDescriptions }}
       <div v-if="projectListFiltered.length < 1">
         {{ $t('homepage.projects.noMatchingProject') }}
@@ -17,11 +17,11 @@
 </template>
 
 <script setup lang="ts">
-import Project from "@/atoms/Project.vue"
-import {projectList, descriptionMap, descriptionsInFrench, descriptionsInEnglish} from "@/data/projects.ts"
+import Project from "../atoms/Project.vue"
+import {projectList, descriptionMap, descriptionsInFrench, descriptionsInEnglish} from "../data/projects.ts"
 import {computed, ref} from "vue"
 import {useI18n} from "vue-i18n"
-import {Category, type TProject} from "@/types/utils.ts"
+import {Category, type TProject} from "../types/utils.ts"
 
 const {locale} = useI18n()
 const categories: string[] = Object.values(Category)
