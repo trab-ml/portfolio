@@ -1,5 +1,7 @@
 # Portfolio
 
+[Get a look at my portfolio website.](https://trab-ml.github.io/portfolio/)
+
 ```bash
 npm run dev
 
@@ -13,8 +15,7 @@ git subtree push --prefix dist origin gh-pages
 
 ## TODO
 
-- [ ] [Schematize the project big-picture](https://excalidraw.com/)
-- [ ] [Deploy the website](https://learnvue.co/articles/deploy-vue-to-github-pages)
+- [ ] [Schematize the project, components based one, big-picture](https://excalidraw.com/)
 
 ## Mock
 ![Portfolio Screenshot](./src/assets/mock.png)

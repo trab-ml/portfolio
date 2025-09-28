@@ -11,7 +11,7 @@ export default defineConfig(({mode}) => {
     define: {
       'import.meta.env.VITE_REPO_NAME': JSON.stringify(env.VITE_REPO_NAME)
     },
-    base: env.VITE_REPO_NAME,
+    base: process.env.NODE_ENV === "production" ? env.VITE_REPO_NAME : "/",
     plugins: [vue(), tailwindcss(), qrcode()],
     resolve: {
       alias: {
