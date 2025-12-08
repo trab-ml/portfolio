@@ -52,7 +52,7 @@ const internShipList = ref<TInternShip[]>([
     {
         title: lang.value[0].title,
         company: 'Nextoo',
-        companyWebsite: 'https://nextoo.lang.value/',
+        companyWebsite: 'https://nextoo.fr/',
         startDate: lang.value[0].startDate,
         endDate: lang.value[0].endDate,
         period: lang.value[0].period,
@@ -62,7 +62,7 @@ const internShipList = ref<TInternShip[]>([
     {
         title: lang.value[1].title,
         company: 'Wezaart',
-        companyWebsite: 'https://pro.wezaart.lang.value/home.html',
+        companyWebsite: 'https://www.linkedin.com/company/wezaart/about/',
         startDate: lang.value[1].startDate,
         endDate: lang.value[1].endDate,
         period: lang.value[1].period,

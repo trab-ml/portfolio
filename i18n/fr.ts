@@ -31,4 +31,8 @@ export const fr = {
             noMatchingProject: "Aucun projet correspondant"
         }
     },
+    notFoundPage: {
+        "title": "404 Page non trouvée !",
+        "callToAction": "Retourner à l'accueil",
+    }
 }

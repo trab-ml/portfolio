@@ -3,6 +3,8 @@
 [Get a look at my portfolio website.](https://trab-ml.github.io/portfolio/)
 
 ```bash
+npm install # -D vite @vitejs/plugin-vue
+
 npm run dev
 
 # To access on mobile (if the computer and mobile are on the same network)

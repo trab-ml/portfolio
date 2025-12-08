@@ -15,7 +15,7 @@
         />
       </svg>
     </div>
-    <div :class="`${style} md:mb-10 p-2 border-1 rounded-box hover:bg-gray-100 hover:cursor-pointer`"
+    <div :class="`${style} md:mb-10 p-2 border rounded-box hover:bg-gray-100 hover:cursor-pointer`"
          @click="handleClick">
       <time class="font-mono italic">{{ `${experience.startDate} - ${experience.endDate}` }}</time>
       <div class="text-lg font-black">{{ experience.title }}</div>
