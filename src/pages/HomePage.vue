@@ -12,7 +12,7 @@
         <pre data-prefix="6" class="text-success"><code>"mobility": "{{ $t('homepage.mobility') }}",</code></pre>
         <pre data-prefix="7"><code>}</code></pre>
       </div>
-      <div class="block max-w-fit mx-auto mt-4 border-1 rounded-md ">
+      <div class="block max-w-fit mx-auto mt-4 border rounded-md ">
         <a href="Bernard_TRAORE (CV).pdf" download>
           <button class="btn download-btn">{{ $t('homepage.downloadTheCV') }}<i class="fas fa-download"></i></button>
         </a>

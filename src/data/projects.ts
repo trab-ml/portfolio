@@ -13,6 +13,7 @@ const descriptionsInFrench = new Map<number, string>([
     [9, "Site vitrine d'une agence immobilière."],
     [10, "Squelette de Dashboard pour Admin."],
     [11, "Intégration du site web d'une agence immobilière."],
+    [12, "Développement d’un mini-shell Unix (mysh) en langage C : implémentation d’une interface en ligne de commande permettant l’exécution de programmes, la gestion des processus et des commandes système."],
 ])
 const descriptionsInEnglish = new Map<number, string>([
     [1, "Web note-taking solution with offline functionality."],
@@ -26,6 +27,7 @@ const descriptionsInEnglish = new Map<number, string>([
     [9, "Showcase site for a real estate agency."],
     [10, "Admin Dashboard skeleton."],
     [11, "Integration of a real estate agency's website."],
+    [12, "Development of a mini-Unix shell (mysh) in C language: implementation of a command-line interface allowing the execution of programs, the management of processes and system commands."],
 ])
 const descriptionMap = ref(descriptionsInFrench)
 const projectList = ref([
@@ -144,6 +146,15 @@ const projectList = ref([
         repositoryUrl: "https://github.com/trab-ml/dream-home",
         category: Category.FRONT,
         technologies: ["React", "CSS", "Bootstrap"],
+    },
+    {
+        id: 13,
+        title: "MySh",
+        description: descriptionMap.value.get(13) || "",
+        imageUrl: "my-sh.png",
+        repositoryUrl: "https://github.com/trab-ml/mysh",
+        category: Category.OS,
+        technologies: ["C"],
     },
 ])
 

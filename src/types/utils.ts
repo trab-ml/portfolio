@@ -4,6 +4,7 @@ export const Category = {
     FULLSTACK: "Fullstack",
     ALGORITHM: "Algorithm",
     AI: "AI",
+    OS: "Operating System"
 }
 
 export type Category = (typeof Category)[keyof typeof Category]

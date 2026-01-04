@@ -1,10 +1,14 @@
 <template>
   <div class="card bg-base-100 w-full shadow-sm">
     <figure>
-      <img
+      <a
+        :href="props.project.imageUrl" 
+        target="_blank">
+        <img
           class="rounded-b-box w-[90%] cursor-pointer transition delay-150 duration-300 ease-in-out hover:scale-112"
           :src="props.project.imageUrl"
           :alt="project.title"/>
+      </a>
     </figure>
     <div class="card-body">
       <h2 class="card-title">
