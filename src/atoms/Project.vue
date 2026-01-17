@@ -21,8 +21,8 @@
 
         <a v-if="project.repositoryUrl" :href="project.repositoryUrl" target="_blank"
            class="tooltip cursor-pointer underline underline-offset-3 hover:no-underline"
-           :data-tip="$t('homepage.projects.seeCode.desc')">
-          <code-braces-icon /> {{ $t('homepage.projects.seeCode.title') }}
+           :data-tip="$t('homepage.dev_projects.seeCode.desc')">
+          <code-braces-icon /> {{ $t('homepage.dev_projects.seeCode.title') }}
         </a>
         <span :class="`badge ${categoriesColors.get(project.category)}`">{{ project.category }}</span>
       </h2>
