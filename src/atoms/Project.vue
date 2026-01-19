@@ -1,11 +1,11 @@
 <template>
   <div class="card bg-base-100 w-full shadow-sm">
-    <figure>
+    <figure class="h-68 overflow-hidden">
       <a
         :href="props.project.imageUrl" 
         target="_blank">
         <img
-          class="rounded-b-box w-[90%] cursor-pointer transition delay-150 duration-300 ease-in-out hover:scale-112"
+          class="rounded-b-box w-100 h-full object-cover cursor-pointer transition delay-150 duration-300 ease-in-out hover:scale-112"
           :src="props.project.imageUrl"
           :alt="project.title"/>
       </a>
@@ -21,8 +21,8 @@
 
         <a v-if="project.repositoryUrl" :href="project.repositoryUrl" target="_blank"
            class="tooltip cursor-pointer underline underline-offset-3 hover:no-underline"
-           :data-tip="$t('homepage.projects.seeCode.desc')">
-          <code-braces-icon /> {{ $t('homepage.projects.seeCode.title') }}
+           :data-tip="$t('homepage.dev_projects.seeCode.desc')">
+          <code-braces-icon /> {{ $t('homepage.dev_projects.seeCode.title') }}
         </a>
         <span :class="`badge ${categoriesColors.get(project.category)}`">{{ project.category }}</span>
       </h2>

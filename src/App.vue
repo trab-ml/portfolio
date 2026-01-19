@@ -1,6 +1,6 @@
 <template>
   <Header />
-  <main class="px-[1.5rem] sm:px-[2rem]">
+  <main class="px-6 sm:px-8">
     <RouterView />
   </main>
   <Footer />
