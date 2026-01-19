@@ -12,6 +12,7 @@ export const en = {
         },
     },
     homepage: {
+        description: "My portfolio website hosted on github 'welcome page'.",
         title: {
             partOne: "Hello there,",
             partTwo: "welcome on my portfolio website.",
@@ -245,5 +246,6 @@ export const en = {
     notFoundPage: {
         title: "404 Page not found !",
         callToAction: "Go back home",
+        description: "My portfolio website hosted on github 'not found page'.",
     },
 };

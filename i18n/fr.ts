@@ -12,6 +12,7 @@ export const fr = {
         },
     },
     homepage: {
+        description: "La page 'd\'accueil' du site web de mon portfolio hébergé sur github.",
         title: {
             partOne: "Salut,",
             partTwo: "bienvenue sur mon portfolio.",
@@ -245,5 +246,6 @@ export const fr = {
     notFoundPage: {
         title: "404 Page non trouvée !",
         callToAction: "Retourner à l'accueil",
+        description: "Page 'non trouvée' du site web de mon portfolio hébergé sur github.",
     },
 };
