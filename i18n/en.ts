@@ -242,6 +242,14 @@ export const en = {
                 },
             ],
         },
+        footer: {
+            contact: {
+                phone: "+33753855479",
+                email: "btra2420@gmail.com",
+                linkedin: "https://www.linkedin.com/in/bernard-traor%C3%A9-8764621b9/",
+                github: "https://github.com/trab-ml"
+            },
+        }
     },
     notFoundPage: {
         title: "404 Page not found !",

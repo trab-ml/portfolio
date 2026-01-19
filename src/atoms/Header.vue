@@ -8,20 +8,20 @@
       <div class="flex dropdown dropdown-center visible sm:hidden">
         <!-- Mobile Menu -->
         <div tabindex="0" role="button"
-             class="my-auto text-base btn rounded-box p-1 sm:p-0 border-1 border-solid border-black bg-base-100">
+             class="my-auto text-base btn rounded-box p-1 sm:p-0 border border-solid border-black bg-base-100">
           <menu-icon class="mb-1"/>
           <span>{{ $t('header.nav.menu') }}</span>
         </div>
         <ul
             tabindex="0"
-            class="menu dropdown-content bg-base-100 rounded-box z-1 w-auto mt-[3rem] p-0 shadow-sm">
+            class="menu dropdown-content bg-base-100 rounded-box z-1 w-auto mt-12 p-0 shadow-sm">
           <li><a href="#experiences">
             <briefcase-outline-icon class="mb-1"/>
             <span>{{ $t('header.nav.experiences') }}</span></a></li>
-          <li class="border-t-1 border-solid"><a href="#projects">
+          <li class="border-t border-solid"><a href="#projects">
             <hammer-wrench-icon class="mb-1"/>
             <span>{{ $t('header.nav.projects') }}</span></a></li>
-          <li class="border-t-1 border-solid"><a href="#footer">
+          <li class="border-t border-solid"><a href="#footer">
             <account-tie-icon class="mb-1"/>
             <span>{{ $t('header.nav.contact') }}</span></a></li>
         </ul>
@@ -29,21 +29,21 @@
       <ul class="bg-white border-0 w-auto m-0 p-0 gap-3 text-base font-semibold hidden sm:flex">
         <!-- On Desktop (Mobile menu elements) -->
         <li class="flex items-center"><a href="#experiences" class="flex items-center gap-1">
-          <briefcase-outline-icon class="mb-[0.75rem] text-4xl"/>
+          <briefcase-outline-icon class="mb-3 text-4xl"/>
           <span>{{ $t('header.nav.experiences') }}</span></a></li>
         <li class="flex items-center"><a href="#projects" class="flex items-center gap-1">
-          <hammer-wrench-icon class="mb-[0.75rem] text-4xl"/>
+          <hammer-wrench-icon class="mb-3 text-4xl"/>
           <span>{{ $t('header.nav.projects') }}</span></a></li>
         <li class="flex items-center"><a href="#footer" class="flex items-center gap-1">
-          <account-tie-icon class="mb-[0.75rem] text-4xl"/>
+          <account-tie-icon class="mb-3 text-4xl"/>
           <span>{{ $t('header.nav.contact') }}</span></a></li>
       </ul>
       <div class="h-full locale-changer m-0 p-0 focus:outline-none">
         <label for="locale-select" class="sr-only">{{ $t('header.language.label') }}</label>
-        <select id="locale-select" class="h-auto m-0 my-[0.5rem] px-1 py-[0.5rem] text-base font-semibold capitalize border-1 border-solid rounded-box cursor-pointer"
+        <select id="locale-select" class="h-auto m-0 my-2 px-1 py-2 text-base font-semibold capitalize border border-solid rounded-box cursor-pointer"
                 v-model="$i18n.locale">
           <option v-for="locale in $i18n.availableLocales" :key="`locale-${locale}`" :value="locale"
-                  class="max-w-[1.5rem] m-0 p-0 capitalize">{{ locale }}
+                  class="max-w-6 m-0 p-0 capitalize">{{ locale }}
           </option>
         </select>
       </div>
