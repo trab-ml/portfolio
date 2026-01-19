@@ -7,6 +7,9 @@ export const fr = {
             projects: "Projets",
             contact: "Contactez-moi",
         },
+        language: {
+            label: "Sélectionner une langue"
+        },
     },
     homepage: {
         title: {

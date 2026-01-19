@@ -39,7 +39,8 @@
           <span>{{ $t('header.nav.contact') }}</span></a></li>
       </ul>
       <div class="h-full locale-changer m-0 p-0 focus:outline-none">
-        <select class="h-auto m-0 my-[0.5rem] px-1 py-[0.5rem] text-base font-semibold capitalize border-1 border-solid rounded-box cursor-pointer"
+        <label for="locale-select" class="sr-only">{{ $t('header.language.label') }}</label>
+        <select id="locale-select" class="h-auto m-0 my-[0.5rem] px-1 py-[0.5rem] text-base font-semibold capitalize border-1 border-solid rounded-box cursor-pointer"
                 v-model="$i18n.locale">
           <option v-for="locale in $i18n.availableLocales" :key="`locale-${locale}`" :value="locale"
                   class="max-w-[1.5rem] m-0 p-0 capitalize">{{ locale }}

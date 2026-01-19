@@ -5,7 +5,7 @@
         :href="props.project.imageUrl" 
         target="_blank">
         <img
-          class="rounded-b-box w-[90%] cursor-pointer transition delay-150 duration-300 ease-in-out hover:scale-112"
+          class="rounded-b-box w-100 h-auto cursor-pointer transition delay-150 duration-300 ease-in-out hover:scale-112"
           :src="props.project.imageUrl"
           :alt="project.title"/>
       </a>

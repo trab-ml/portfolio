@@ -50,3 +50,4 @@ git subtree push --prefix dist origin gh-pages
 - [defence of ts enum](https://www.reddit.com/r/typescript/comments/1jobls9/defence_of_typescript_enums/)
 - [Github Gist](https://gist.github.com/SKempin/b7857a6ff6bddb05717cc17a44091202)
 - [static-deploy](https://vite.dev/guide/static-deploy)
+- [icons8](https://icons8.com/icons)
