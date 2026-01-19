@@ -1,9 +1,17 @@
 <template>
   <footer id="footer" class="max-h-24 flex justify-center gap-4 border-t sm:text-xl">
-    <a :href="`tel:${$t('homepage.footer.contact.phone')}`" class="flex flex-col items-center text-[0.75rem] sm:block cursor-pointer hover:font-semibold hover:underline sm:text-lg"><phone-icon class="me-1 mt-1"/>{{$t('homepage.footer.contact.phone')}}</a>
-    <a :href="`mailto:${$t('homepage.footer.contact.email')}`" class="flex flex-col items-center text-[0.75rem] sm:block cursor-pointer hover:font-semibold hover:underline sm:text-lg"><email-outline-icon class="me-1 mt-1"/>{{$t('homepage.footer.contact.email')}}</a>
-    <a :href="`${$t('homepage.footer.contact.linkedin')}`" class="flex flex-col items-center text-[0.75rem] sm:block cursor-pointer hover:font-semibold hover:underline sm:text-lg"><linkedin-icon class="me-1 mt-1"/>Linkedin</a>
-    <a :href="`${$t('homepage.footer.contact.github')}`" class="flex flex-col items-center text-[0.75rem] sm:block cursor-pointer hover:font-semibold hover:underline sm:text-lg" target="_blank"><github-icon class="me-1 mt-1"/>Github</a>
+    <a :href="`tel:${$t('homepage.footer.contact.phone')}`"
+      class="flex flex-col items-center text-[0.75rem] sm:block cursor-pointer hover:font-semibold hover:underline sm:text-lg"><phone-icon
+        class="me-1 mt-1" />{{ $t('homepage.footer.contact.phone') }}</a>
+    <a :href="`mailto:${$t('homepage.footer.contact.email')}`"
+      class="flex flex-col items-center text-[0.75rem] sm:block cursor-pointer hover:font-semibold hover:underline sm:text-lg"><email-outline-icon
+        class="me-1 mt-1" />{{ $t('homepage.footer.contact.email') }}</a>
+    <a :href="`${$t('homepage.footer.contact.linkedin')}`"
+      class="flex flex-col items-center text-[0.75rem] sm:block cursor-pointer hover:font-semibold hover:underline sm:text-lg"><linkedin-icon
+        class="me-1 mt-1" />Linkedin</a>
+    <a :href="`${$t('homepage.footer.contact.github')}`"
+      class="flex flex-col items-center text-[0.75rem] sm:block cursor-pointer hover:font-semibold hover:underline sm:text-lg"
+      target="_blank"><github-icon class="me-1 mt-1" />Github</a>
   </footer>
 </template>
 

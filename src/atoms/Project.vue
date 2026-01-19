@@ -1,11 +1,11 @@
 <template>
   <div class="card bg-base-100 w-full shadow-sm">
-    <figure>
+    <figure class="h-68 overflow-hidden">
       <a
         :href="props.project.imageUrl" 
         target="_blank">
         <img
-          class="rounded-b-box w-100 h-auto cursor-pointer transition delay-150 duration-300 ease-in-out hover:scale-112"
+          class="rounded-b-box w-100 h-full object-cover cursor-pointer transition delay-150 duration-300 ease-in-out hover:scale-112"
           :src="props.project.imageUrl"
           :alt="project.title"/>
       </a>

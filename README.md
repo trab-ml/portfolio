@@ -51,3 +51,4 @@ git subtree push --prefix dist origin gh-pages
 - [Github Gist](https://gist.github.com/SKempin/b7857a6ff6bddb05717cc17a44091202)
 - [static-deploy](https://vite.dev/guide/static-deploy)
 - [icons8](https://icons8.com/icons)
+- [img2go](https://www.img2go.com/fr)

@@ -240,12 +240,23 @@ export const en = {
                     category: "Operating System",
                     technologies: ["C"],
                 },
+                {
+                    id: 14,
+                    title: "L'Asso",
+                    description:
+                        "Website of a non-profit association committed to fighting educational inequality and expanding access to quality learning for all.",
+                    imageUrl: "act-now.png",
+                    projectUrl: "https://lasso-education.up.railway.app/",
+                    repositoryUrl: "https://github.com/trab-ml/lasso",
+                    category: "Front",
+                    technologies: ["Php", "JavaScript", "Bootstrap"],
+                },
             ],
         },
         footer: {
             contact: {
                 phone: "+33753855479",
-                email: "btra2420@gmail.com",
+                email: "btra2420{'@'}gmail.com",
                 linkedin: "https://www.linkedin.com/in/bernard-traor%C3%A9-8764621b9/",
                 github: "https://github.com/trab-ml"
             },

@@ -8,11 +8,12 @@ export const fr = {
             contact: "Contactez-moi",
         },
         language: {
-            label: "Sélectionner une langue"
+            label: "Sélectionner une langue",
         },
     },
     homepage: {
-        description: "La page 'd\'accueil' du site web de mon portfolio hébergé sur github.",
+        description:
+            "La page 'd\'accueil' du site web de mon portfolio hébergé sur github.",
         title: {
             partOne: "Salut,",
             partTwo: "bienvenue sur mon portfolio.",
@@ -240,20 +241,33 @@ export const fr = {
                     category: "Operating System",
                     technologies: ["C"],
                 },
+                {
+                    id: 14,
+                    title: "L'Asso",
+                    description:
+                        "Site web d'une association à but non lucratif engagée dans la lutte contre les inégalités en matière d'éducation et l'élargissement de l'accès à un enseignement de qualité pour tous.",
+                    imageUrl: "act-now.png",
+                    projectUrl: "https://lasso-education.up.railway.app/",
+                    repositoryUrl: "https://github.com/trab-ml/lasso",
+                    category: "Front",
+                    technologies: ["Php", "JavaScript", "Bootstrap"],
+                },
             ],
         },
         footer: {
             contact: {
                 phone: "+33753855479",
-                email: "btra2420@gmail.com",
-                linkedin: "https://www.linkedin.com/in/bernard-traor%C3%A9-8764621b9/",
-                github: "https://github.com/trab-ml"
+                email: "btra2420{'@'}gmail.com",
+                linkedin:
+                    "https://www.linkedin.com/in/bernard-traor%C3%A9-8764621b9/",
+                github: "https://github.com/trab-ml",
             },
-        }
+        },
     },
     notFoundPage: {
         title: "404 Page non trouvée !",
         callToAction: "Retourner à l'accueil",
-        description: "Page 'non trouvée' du site web de mon portfolio hébergé sur github.",
+        description:
+            "Page 'non trouvée' du site web de mon portfolio hébergé sur github.",
     },
 };
