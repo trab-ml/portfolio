@@ -1,6 +1,6 @@
 <template>
   <section id="experiences" class="flex flex-col items-center">
-    <h2 class="text-3xl text-center my-8">{{ $t('homepage.professional_experience.title') }}</h2>
+    <h2 class="text-3xl text-center my-8 dark:text-black">{{ $t('homepage.professional_experience.title') }}</h2>
     <ul class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
       <Experience v-for="(item, index) in experiences" :key="index" :index="index" :experience="item"
                   :style="index % 2 === 0 ? 'timeline-start md:text-end' : 'timeline-end'"

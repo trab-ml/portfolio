@@ -1,9 +1,9 @@
 <template>
   <section id="projects" class="py-2">
-    <h2 class="text-3xl text-center my-8">{{ $t('homepage.dev_projects.title') }}</h2>
+    <h2 class="text-3xl text-center my-8 dark:text-black">{{ $t('homepage.dev_projects.title') }}</h2>
     <form class="flex justify-start gap-2 flex-wrap">
       <input v-for="(item, index) in categories" :key="`techno-${index}`" type="checkbox" name="techno" :value="item" v-model="checkedCategories"
-             :aria-label="item" class="btn border border-solid border-black text-base font-light checked:border-0"/>
+             :aria-label="item" class="btn border border-solid border-black text-base font-light checked:border-0 dark:checked:bg-fuchsia-700"/>
       <input class="btn btn-square border-black" type="reset" value="×" @click="resetFilters"/>
     </form>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-4">

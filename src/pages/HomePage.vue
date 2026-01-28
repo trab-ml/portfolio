@@ -1,6 +1,6 @@
 <template>
   <section class="flex flex-col items-center sm:flex-row sm:items-start">
-    <h1 class="text-3xl font-bold sm:w-1/3 sm:mt-2 md:w-full">{{ $t('homepage.title.partOne') }} <span
+    <h1 class="text-3xl font-bold sm:w-1/3 sm:mt-2 md:w-full dark:font-black dark:text-black">{{ $t('homepage.title.partOne') }} <span
         class="text-3xl font-light">{{ $t('homepage.title.partTwo') }}</span></h1>
     <div class="w-full mt-1 sm:w-2/3 md:w-full sm:mt-12">
       <div class="mockup-code">
@@ -14,7 +14,7 @@
       </div>
       <div class="block max-w-fit mx-auto mt-4 border rounded-md">
         <a href="Bernard_TRAORE (CV).pdf" download>
-          <button class="btn download-btn">{{ $t('homepage.downloadTheCV') }}<i class="fas fa-download"></i></button>
+          <button class="btn download-btn dark:text-amber-50 dark:bg-black">{{ $t('homepage.downloadTheCV') }}<i class="fas fa-download"></i></button>
         </a>
       </div>
     </div>

@@ -15,7 +15,7 @@
         />
       </svg>
     </div>
-    <div :class="`${style} md:mb-10 p-2 border rounded-box hover:bg-gray-100 hover:cursor-pointer`"
+    <div :class="`${style} md:mb-10 p-2 border rounded-box hover:bg-gray-100 hover:cursor-pointer dark:bg-black dark:text-white dark:hover:bg-(--dark-mode-secondary-bg-color)`"
          @click="handleClick">
       <time class="font-mono italic">{{ `${experience.startDate} - ${experience.endDate}` }}</time>
       <div class="text-lg font-black">{{ experience.title }}</div>
@@ -23,7 +23,7 @@
     <hr/>
   </li>
   <dialog :id="modalId" class="modal">
-    <div class="modal-box">
+    <div class="modal-box dark:bg-black dark:text-white">
       <h3 class="text-md font-semibold md:text-lg">
         {{ experience.title }} -
 

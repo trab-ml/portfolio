@@ -1,5 +1,5 @@
 <template>
-  <footer id="footer" class="max-h-24 flex justify-center gap-4 border-t sm:text-xl">
+  <footer id="footer" class="max-h-24 flex justify-center gap-4 border-t sm:text-xl dark:bg-(--dark-mode-main-bg-color) dark:text-(--dark-mode-main-text-color)">
     <a :href="`tel:${$t('homepage.footer.contact.phone')}`"
       class="flex flex-col items-center text-[0.75rem] sm:block cursor-pointer hover:font-semibold hover:underline sm:text-lg"><phone-icon
         class="me-1 mt-1" />{{ $t('homepage.footer.contact.phone') }}</a>

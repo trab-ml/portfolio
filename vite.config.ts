@@ -19,6 +19,6 @@ export default defineConfig(({mode}) => {
         "icons": path.resolve(__dirname, "node_modules/vue-material-design-icons")
       },
       extensions: [".vue"],
-    },
+    }
   }
 })
