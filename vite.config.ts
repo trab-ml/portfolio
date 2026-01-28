@@ -20,5 +20,6 @@ export default defineConfig(({mode}) => {
       },
       extensions: [".vue"],
     },
+    darkMode: "class",
   }
 })

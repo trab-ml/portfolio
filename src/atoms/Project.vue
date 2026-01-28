@@ -1,6 +1,6 @@
 <template>
   <div class="card bg-base-100 w-full shadow-sm">
-    <figure class="h-68 overflow-hidden">
+    <figure class="h-68 overflow-hidden dark:bg-white">
       <a
         :href="props.project.imageUrl" 
         target="_blank">

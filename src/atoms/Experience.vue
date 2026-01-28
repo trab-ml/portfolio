@@ -1,7 +1,7 @@
 <template>
   <li>
     <hr v-if="index > 0"/>
-    <div class="timeline-middle">
+    <div class="timeline-middle dark:bg-black">
       <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 20 20"
@@ -15,7 +15,7 @@
         />
       </svg>
     </div>
-    <div :class="`${style} md:mb-10 p-2 border rounded-box hover:bg-gray-100 hover:cursor-pointer`"
+    <div :class="`${style} md:mb-10 p-2 border rounded-box hover:bg-gray-100 hover:cursor-pointer dark:bg-black`"
          @click="handleClick">
       <time class="font-mono italic">{{ `${experience.startDate} - ${experience.endDate}` }}</time>
       <div class="text-lg font-black">{{ experience.title }}</div>

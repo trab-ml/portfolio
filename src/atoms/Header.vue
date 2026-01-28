@@ -1,7 +1,7 @@
 <template>
   <header class="navbar bg-base-100 shadow-sm">
     <div class="ms-4 p-0">
-      <xml-icon class="text-5xl text-indigo-950"/>
+      <xml-icon class="text-5xl text-indigo-950 dark:text-amber-50"/>
     </div>
 
     <div class="flex grow justify-end gap-3 me-4">
@@ -40,7 +40,7 @@
       </ul>
       <div class="h-full locale-changer m-0 p-0 focus:outline-none">
         <label for="locale-select" class="sr-only">{{ $t('header.language.label') }}</label>
-        <select id="locale-select" class="h-auto m-0 my-2 px-1 py-2 text-base font-semibold capitalize border border-solid rounded-box cursor-pointer"
+        <select id="locale-select" class="h-auto m-0 my-2 px-1 py-2 text-base font-semibold capitalize border border-solid rounded-box cursor-pointer dark:bg-amber-50 dark:text-black"
                 v-model="$i18n.locale">
           <option v-for="locale in $i18n.availableLocales" :key="`locale-${locale}`" :value="locale"
                   class="max-w-6 m-0 p-0 capitalize">{{ locale }}
