@@ -8,7 +8,7 @@ npm install # -D vite @vitejs/plugin-vue
 npm run dev
 
 # To access on mobile (if the computer and mobile are on the same network)
-vite --host
+npx vite --host
 
 # Two options to build and deploy on gh-pages
 # Option 1: Using gh-pages subtree

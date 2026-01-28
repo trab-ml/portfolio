@@ -1,5 +1,5 @@
 <template>
-  <div class="card bg-base-100 w-full shadow-sm">
+  <div class="card bg-base-100 w-full shadow-sm dark:bg-(--dark-mode-main-bg-color) dark:text-(--dark-mode-main-text-color)">
     <figure class="h-68 overflow-hidden dark:bg-white">
       <a
         :href="props.project.imageUrl" 
@@ -24,7 +24,7 @@
            :data-tip="$t('homepage.dev_projects.seeCode.desc')">
           <code-braces-icon /> {{ $t('homepage.dev_projects.seeCode.title') }}
         </a>
-        <span :class="`badge ${categoriesColors.get(project.category)}`">{{ project.category }}</span>
+        <span :class="`badge ${categoriesColors.get(project.category)} text-xs md:text-md`">{{ project.category }}</span>
       </h2>
       <p>{{ project.description }}</p>
       <div class="card-actions justify-end">
