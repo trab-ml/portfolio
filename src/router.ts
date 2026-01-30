@@ -1,15 +1,33 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import HomePage from "./pages/HomePage.vue"
-import NotFound from "./pages/NotFound.vue"
+import { createRouter, createWebHistory } from "vue-router";
+import HomePage from "./pages/HomePage.vue";
+import NotFound from "./pages/NotFound.vue";
 
 const routes = [
-  {path: '/', name: 'homePathOne', component: HomePage, meta: {description: 'homepage.description'}},
-  {path: `/${import.meta.env.VITE_REPO_NAME}/`, name: 'homePathTwo', component: HomePage},
-  {path: `/${import.meta.env.VITE_REPO_NAME}/*`, name: 'homePathThree', component: HomePage},
-  {path: `/:pathMatch(.*)*`, name: 'notFound', component: NotFound, meta: {description: 'notFoundPage.description'}},
-]
+  {
+    path: "/",
+    name: "homePathOne",
+    component: HomePage,
+    meta: { description: "homepage.description" },
+  },
+  {
+    path: `/${import.meta.env.VITE_REPO_NAME}/`,
+    name: "homePathTwo",
+    component: HomePage,
+  },
+  {
+    path: `/${import.meta.env.VITE_REPO_NAME}/*`,
+    name: "homePathThree",
+    component: HomePage,
+  },
+  {
+    path: `/:pathMatch(.*)*`,
+    name: "notFound",
+    component: NotFound,
+    meta: { description: "notFoundPage.description" },
+  },
+];
 
 export const router = createRouter({
   history: createWebHistory(),
   routes,
-})
+});

@@ -1,46 +1,64 @@
 <template>
-  <div class="card bg-base-100 w-full shadow-sm dark:bg-(--dark-mode-main-bg-color) dark:text-(--dark-mode-main-text-color)">
-    <figure class="h-68 overflow-hidden dark:bg-white">
-      <a
-        :href="props.project.imageUrl" 
-        target="_blank">
-        <img
-          class="rounded-b-box w-100 h-full object-cover cursor-pointer transition delay-150 duration-300 ease-in-out hover:scale-112"
-          :src="props.project.imageUrl"
-          :alt="project.title"/>
-      </a>
-    </figure>
-    <div class="card-body">
-      <h2 class="card-title">
-        <a v-if="project.projectUrl" :href="project.projectUrl" target="_blank"
-           class="tooltip cursor-pointer underline underline-offset-3 hover:no-underline"
-           :data-tip="$t('homepage.dev_projects.seeDeployedProject')">
-          <eye-outline-icon />
-          {{ project.title }}
-        </a>
-        <span v-else># {{ project.title }}</span>
+    <div
+        class="card bg-base-100 w-full shadow-sm dark:bg-(--dark-mode-main-bg-color) dark:text-(--dark-mode-main-text-color)"
+    >
+        <figure class="h-68 overflow-hidden dark:bg-white">
+            <a :href="props.project.imageUrl" target="_blank">
+                <img
+                    class="rounded-b-box w-100 h-full object-cover cursor-pointer transition delay-150 duration-300 ease-in-out hover:scale-112"
+                    :src="props.project.imageUrl"
+                    :alt="project.title"
+                />
+            </a>
+        </figure>
+        <div class="card-body">
+            <h2 class="card-title">
+                <a
+                    v-if="project.projectUrl"
+                    :href="project.projectUrl"
+                    target="_blank"
+                    class="tooltip cursor-pointer underline underline-offset-3 hover:no-underline"
+                    :data-tip="$t('homepage.dev_projects.seeDeployedProject')"
+                >
+                    <eye-outline-icon />
+                    {{ project.title }}
+                </a>
+                <span v-else># {{ project.title }}</span>
 
-        <a v-if="project.repositoryUrl" :href="project.repositoryUrl" target="_blank"
-           class="tooltip cursor-pointer underline underline-offset-3 hover:no-underline"
-           :data-tip="$t('homepage.dev_projects.seeCode.desc')">
-          <code-braces-icon /> {{ $t('homepage.dev_projects.seeCode.title') }}
-        </a>
-        <span :class="`badge ${categoriesColors.get(project.category)} text-xs md:text-md`">{{ project.category }}</span>
-      </h2>
-      <p>{{ project.description }}</p>
-      <div class="card-actions justify-end">
-        <div v-for="(techno) in project.technologies" class="badge badge-outline">{{ techno }}</div>
-      </div>
+                <a
+                    v-if="project.repositoryUrl"
+                    :href="project.repositoryUrl"
+                    target="_blank"
+                    class="tooltip cursor-pointer underline underline-offset-3 hover:no-underline"
+                    :data-tip="$t('homepage.dev_projects.seeCode.desc')"
+                >
+                    <code-braces-icon />
+                    {{ $t("homepage.dev_projects.seeCode.title") }}
+                </a>
+                <span
+                    :class="`badge ${categoriesColors.get(project.category)} text-xs md:text-md`"
+                    >{{ project.category }}</span
+                >
+            </h2>
+            <p>{{ project.description }}</p>
+            <div class="card-actions justify-end">
+                <div
+                    v-for="techno in project.technologies"
+                    class="badge badge-outline"
+                >
+                    {{ techno }}
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
 </template>
 
 <script setup lang="ts">
-import EyeOutlineIcon from 'icons/EyeOutline.vue'
-import CodeBracesIcon from 'icons/CodeBraces.vue'
-import {categoriesColors, type TProject} from "../types/utils.ts"
+import EyeOutlineIcon from "icons/EyeOutline.vue";
+import CodeBracesIcon from "icons/CodeBraces.vue";
+import { categoriesColors, type TProject } from "../types/utils.ts";
 
 const props = defineProps<{
-  project: TProject
-}>()
+    project: TProject;
+}>();
 </script>
