@@ -7,7 +7,7 @@ npm install # -D vite @vitejs/plugin-vue
 
 npm run dev
 
-# To access on mobile (if the computer and mobile are on the same network)
+# To access on mobile (if computer and mobile are on the same network)
 npx vite --host
 
 # Two options to build and deploy on gh-pages
@@ -16,6 +16,13 @@ git subtree add --prefix dist --squash
 git subtree push --prefix dist origin gh-pages
 
 # Option 2: Using GitHub Actions (need to setup the workflow file first)
+
+# tests
+npm init playwright@latest
+npx playwright install-deps
+
+# --ui for live step view
+npx playwright test
 ```
 
 ## Mock
@@ -52,3 +59,4 @@ git subtree push --prefix dist origin gh-pages
 - [static-deploy](https://vite.dev/guide/static-deploy)
 - [icons8](https://icons8.com/icons)
 - [img2go](https://www.img2go.com/fr)
+- [playwright](https://playwright.dev/)
