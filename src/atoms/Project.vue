@@ -13,7 +13,8 @@
     <div class="card-body">
       <h2 class="card-title">
         <a v-if="project.projectUrl" :href="project.projectUrl" target="_blank"
-           class="cursor-pointer underline underline-offset-3 hover:no-underline">
+           class="tooltip cursor-pointer underline underline-offset-3 hover:no-underline"
+           :data-tip="$t('homepage.dev_projects.seeDeployedProject')">
           <eye-outline-icon />
           {{ project.title }}
         </a>

@@ -88,6 +88,7 @@ export const en = {
         },
         dev_projects: {
             title: "Projects",
+            seeDeployedProject: "See deployed project",
             seeCode: {
                 title: "Code",
                 desc: "See the code",
