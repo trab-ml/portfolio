@@ -1,6 +1,6 @@
 <template>
     <div
-        class="card bg-base-100 w-full shadow-sm dark:bg-(--dark-mode-main-bg-color) dark:text-(--dark-mode-main-text-color)"
+        class="card bg-base-100 w-full shadow-sm border border-solid"
     >
         <figure class="h-68 overflow-hidden bg-white">
             <a :href="props.project.imageUrl" target="_blank">

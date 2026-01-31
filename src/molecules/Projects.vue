@@ -12,12 +12,12 @@
                 :value="item"
                 v-model="checkedCategories"
                 :aria-label="item"
-                class="btn border border-solid border-black text-base font-light checked:border-0 dark:checked:bg-fuchsia-700"
+                class="btn border border-solid border-black text-base font-light checked:border-0"
             />
             <input
                 class="btn btn-square border-black"
                 type="reset"
-                value="×"
+                value="X"
                 @click="resetFilters"
             />
         </form>

@@ -1,6 +1,6 @@
 <template>
     <header
-        class="navbar bg-base-100 shadow-sm dark:bg-(--dark-mode-main-bg-color) dark:text-(--dark-mode-main-text-color)"
+        class="navbar bg-base-100 shadow-sm"
     >
         <div class="ms-4 p-0">
             <button
@@ -18,14 +18,14 @@
                 <div
                     tabindex="0"
                     role="button"
-                    class="my-auto text-base btn rounded-box p-1 sm:p-0 border border-solid border-black bg-base-100 dark:border-white dark:shadow-none"
+                    class="my-auto text-base btn rounded-box p-1 sm:p-0 border border-solid border-black bg-base-100"
                 >
                     <menu-icon class="mb-1" />
                     <span>{{ $t("header.nav.menu") }}</span>
                 </div>
                 <ul
                     tabindex="0"
-                    class="menu dropdown-content bg-base-100 rounded-box z-1 w-auto mt-12 p-0 shadow-sm dark:bg-(--dark-mode-main-bg-color) dark:text-(--dark-mode-main-text-color)"
+                    class="menu dropdown-content bg-base-100 rounded-box z-1 w-auto mt-12 p-0 shadow-sm"
                 >
                     <li>
                         <a href="#experiences">
@@ -77,14 +77,14 @@
                 }}</label>
                 <select
                     id="locale-select"
-                    class="h-auto m-0 my-2 px-1 py-2 text-base font-semibold capitalize border border-solid rounded-box cursor-pointer dark:bg-white dark:text-black"
+                    class="h-auto m-0 my-2 px-1 py-2 text-base font-semibold capitalize border border-solid rounded-box cursor-pointer"
                     v-model="$i18n.locale"
                 >
                     <option
                         v-for="locale in $i18n.availableLocales"
                         :key="`locale-${locale}`"
                         :value="locale"
-                        class="max-w-6 m-0 p-0 capitalize bg-white text-black dark:bg-(--dark-mode-main-bg-color) dark:text-(--dark-mode-main-text-color)"
+                        class="max-w-6 m-0 p-0 capitalize bg-white text-black"
                     >
                         {{ locale }}
                     </option>

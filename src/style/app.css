@@ -3,9 +3,6 @@
 
 :root {
     --component-bg-primary-color: #f9fafb;
-    --dark-mode-main-bg-color: #1c222a;
-    --dark-mode-secondary-bg-color: #343844;
-    --dark-mode-main-text-color: #ffffff;
 }
 
 main {

@@ -1,7 +1,7 @@
 <template>
     <section class="flex flex-col items-center sm:flex-row sm:items-start">
         <h1
-            class="text-3xl font-bold sm:w-1/3 sm:mt-2 md:w-full text-black dark:font-black"
+            class="text-3xl font-bold sm:w-1/3 sm:mt-2 md:w-full text-black"
         >
             {{ $t("homepage.title.partOne") }}
             <span class="text-3xl font-light">{{
@@ -36,7 +36,7 @@
             <div class="block max-w-fit mx-auto mt-4 border rounded-md">
                 <a href="Bernard_TRAORE (CV).pdf" download>
                     <button
-                        class="btn download-btn dark:text-amber-50 dark:bg-black"
+                        class="btn download-btn"
                     >
                         {{ $t("homepage.downloadTheCV")
                         }}<i class="fas fa-download"></i>
