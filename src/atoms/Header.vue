@@ -102,7 +102,7 @@ import HammerWrenchIcon from "icons/HammerWrench.vue";
 import BriefcaseOutlineIcon from "icons/BriefcaseOutline.vue";
 import AccountTieIcon from "icons/AccountTie.vue";
 import { computed } from "vue";
-import { theme, toggleThemeMode } from "../utils/themeUtils.ts";
+import { theme, toggleThemeMode, DARK } from "../utils/themeUtils.ts";
 
-const isDarkMode = computed(() => theme.value === "dark");
+const isDarkMode = computed(() => theme.value === DARK);
 </script>
