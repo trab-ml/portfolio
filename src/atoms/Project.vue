@@ -56,7 +56,7 @@
 <script setup lang="ts">
 import EyeOutlineIcon from "icons/EyeOutline.vue";
 import CodeBracesIcon from "icons/CodeBraces.vue";
-import { categoriesColors, type TProject } from "../types/utils.ts";
+import { categoriesColors, type TProject } from "../types/globalTypes.ts";
 
 const props = defineProps<{
     project: TProject;

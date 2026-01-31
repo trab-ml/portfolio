@@ -73,7 +73,7 @@
 
 <script setup lang="ts">
 import { ref } from "vue";
-import { type TInternShip } from "../types/utils.ts";
+import { type TInternShip } from "../types/globalTypes.ts";
 
 const props = defineProps<{
     index: number;

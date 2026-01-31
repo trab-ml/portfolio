@@ -4,7 +4,7 @@
     >
         <div class="ms-4 p-0">
             <button
-                @click="() => (isDarkMode = toggleDarkMode(isDarkMode))"
+                @click="toggleThemeMode()"
                 class="p-2 rounded hover:cursor-pointer"
             >
                 <sun-icon v-if="isDarkMode" class="text-5xl text-amber-50" />
@@ -101,8 +101,8 @@ import SunIcon from "icons/WhiteBalanceSunny.vue";
 import HammerWrenchIcon from "icons/HammerWrench.vue";
 import BriefcaseOutlineIcon from "icons/BriefcaseOutline.vue";
 import AccountTieIcon from "icons/AccountTie.vue";
-import { ref } from "vue";
-import { getInitialDarkMode, toggleDarkMode } from "../types/utils.ts";
+import { computed } from "vue";
+import { theme, toggleThemeMode } from "../utils/themeUtils.ts";
 
-const isDarkMode = ref(getInitialDarkMode());
+const isDarkMode = computed(() => theme.value === "dark");
 </script>

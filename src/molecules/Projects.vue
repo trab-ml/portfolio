@@ -38,7 +38,7 @@
 import Project from "../atoms/Project.vue";
 import { computed, ref } from "vue";
 import { useI18n } from "vue-i18n";
-import { Category, type TProject } from "../types/utils.ts";
+import { Category, type TProject } from "../types/globalTypes.ts";
 
 const { tm } = useI18n();
 const categories: string[] = Object.values(Category);
