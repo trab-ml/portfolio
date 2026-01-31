@@ -1,7 +1,7 @@
 <template>
     <section class="flex flex-col items-center sm:flex-row sm:items-start">
         <h1
-            class="text-3xl font-bold sm:w-1/3 sm:mt-2 md:w-full dark:font-black dark:text-black"
+            class="text-3xl font-bold sm:w-1/3 sm:mt-2 md:w-full text-black dark:font-black"
         >
             {{ $t("homepage.title.partOne") }}
             <span class="text-3xl font-light">{{

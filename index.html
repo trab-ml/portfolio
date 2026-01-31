@@ -7,9 +7,21 @@
             name="description"
             content="Le site web de mon portfolio hébergé sur github. My portfolio website hosted on github."
         />
-        <meta name="color-scheme" content="light dark" />
+        <meta name="color-scheme" content="light" />
         <link rel="icon" type="image/svg+xml" href="/coding-tag-on-pc.png" />
         <title>Bernard TRAORÉ</title>
+        <script type="module">
+            import {
+                getInitialDarkMode,
+                setMetaColorScheme,
+            } from "./src/types/utils.ts";
+
+            const darkMode = getInitialDarkMode();
+
+            document.documentElement.classList.toggle("dark", darkMode);
+
+            setMetaColorScheme(darkMode);
+        </script>
     </head>
     <body>
         <div id="app"></div>

@@ -11,10 +11,3 @@ import Header from "./atoms/Header.vue";
 import { RouterView } from "vue-router";
 import Footer from "./atoms/Footer.vue";
 </script>
-
-<style>
-main {
-    min-height: calc(100vh - 6.7rem);
-    background-color: #f9fafb;
-}
-</style>

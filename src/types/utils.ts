@@ -57,3 +57,26 @@ const randomizeCategoriesBadge = () => {
 };
 
 export const categoriesColors = randomizeCategoriesBadge();
+
+export const getInitialDarkMode = () => {
+  const savedTheme = localStorage.getItem("theme");
+  const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  return savedTheme ? savedTheme === "dark" : prefersDark;
+};
+
+export const setMetaColorScheme = (newMode: boolean) => {
+  const metaColorScheme = document.querySelector('meta[name="color-scheme"]');
+  if (metaColorScheme) {
+    metaColorScheme.setAttribute("content", newMode ? "dark" : "light");
+  }
+};
+
+export const toggleDarkMode = (isDarkMode: boolean) => {
+  let newMode = !isDarkMode;
+  
+  localStorage.setItem("theme", newMode ? "dark" : "light");
+  document.documentElement.classList.toggle("dark", newMode);
+  setMetaColorScheme(newMode);
+
+  return newMode;
+};

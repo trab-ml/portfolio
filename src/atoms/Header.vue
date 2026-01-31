@@ -1,23 +1,20 @@
 <template>
     <header
-        class="navbar bg-base-100 shadow-sm dark:bg-(--dark-mode-main-bg-color)"
+        class="navbar bg-base-100 shadow-sm dark:bg-(--dark-mode-main-bg-color) dark:text-(--dark-mode-main-text-color)"
     >
         <div class="ms-4 p-0">
             <button
-                @click="toggleDarkMode"
+                @click="() => (isDarkMode = toggleDarkMode(isDarkMode))"
                 class="p-2 rounded hover:cursor-pointer"
             >
-                <moon-icon v-if="darkMode" class="text-5xl text-white" />
-                <sun-icon
-                    v-else
-                    class="text-5xl text-black font-black dark:text-amber-50"
-                />
+                <sun-icon v-if="isDarkMode" class="text-5xl text-amber-50" />
+                <moon-icon v-else class="text-5xl text-black" />
             </button>
         </div>
 
         <div class="flex grow justify-end gap-3 me-4">
+            <!-- Mobile Menu -->
             <div class="flex dropdown dropdown-center visible sm:hidden">
-                <!-- Mobile Menu -->
                 <div
                     tabindex="0"
                     role="button"
@@ -50,10 +47,11 @@
                     </li>
                 </ul>
             </div>
+
+            <!-- On Desktop (menu elements) -->
             <ul
-                class="bg-white dark:bg-(--dark-mode-main-bg-color) dark:text-(--dark-mode-main-text-color) border-0 w-auto m-0 p-0 gap-3 text-base font-semibold hidden sm:flex"
+                class="border-0 w-auto m-0 p-0 gap-3 text-base font-semibold hidden sm:flex"
             >
-                <!-- On Desktop (Mobile menu elements) -->
                 <li class="flex items-center">
                     <a href="#experiences" class="flex items-center gap-1">
                         <briefcase-outline-icon class="mb-3 text-4xl" />
@@ -103,29 +101,8 @@ import SunIcon from "icons/WhiteBalanceSunny.vue";
 import HammerWrenchIcon from "icons/HammerWrench.vue";
 import BriefcaseOutlineIcon from "icons/BriefcaseOutline.vue";
 import AccountTieIcon from "icons/AccountTie.vue";
-import { ref, onMounted } from "vue";
+import { ref } from "vue";
+import { getInitialDarkMode, toggleDarkMode } from "../types/utils.ts";
 
-const darkMode = ref(false);
-const LOCAL_STORAGE_THEME_KEY = "theme";
-
-const toggleDarkMode = () => {
-    darkMode.value = !darkMode.value;
-    localStorage.setItem("theme", darkMode.value ? "dark" : "light");
-    document.documentElement.classList.toggle("dark", darkMode.value);
-};
-
-onMounted(() => {
-    const savedTheme = localStorage.getItem(LOCAL_STORAGE_THEME_KEY);
-    const prefersDark = window.matchMedia(
-        "(prefers-color-scheme: dark)",
-    ).matches;
-
-    if (savedTheme) {
-        darkMode.value = savedTheme === "dark";
-    } else {
-        darkMode.value = prefersDark;
-    }
-
-    document.documentElement.classList.toggle("dark", darkMode.value);
-});
+const isDarkMode = ref(getInitialDarkMode());
 </script>

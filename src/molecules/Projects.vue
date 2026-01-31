@@ -1,6 +1,6 @@
 <template>
     <section id="projects" class="py-2">
-        <h2 class="text-3xl text-center my-8 dark:text-black">
+        <h2 class="text-3xl text-center my-8 text-black">
             {{ $t("homepage.dev_projects.title") }}
         </h2>
         <form class="flex justify-start gap-2 flex-wrap">

@@ -2,7 +2,7 @@
     <div
         class="card bg-base-100 w-full shadow-sm dark:bg-(--dark-mode-main-bg-color) dark:text-(--dark-mode-main-text-color)"
     >
-        <figure class="h-68 overflow-hidden dark:bg-white">
+        <figure class="h-68 overflow-hidden bg-white">
             <a :href="props.project.imageUrl" target="_blank">
                 <img
                     class="rounded-b-box w-100 h-full object-cover cursor-pointer transition delay-150 duration-300 ease-in-out hover:scale-112"

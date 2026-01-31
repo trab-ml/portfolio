@@ -244,7 +244,7 @@ export const fr = {
       contact: {
         phone: "+33753855479",
         email: "btra2420{'@'}gmail.com",
-        linkedin: "https://www.linkedin.com/in/bernard-traor%C3%A9-8764621b9/",
+        linkedin: "https://www.linkedin.com/in/bernart0123456789/",
         github: "https://github.com/trab-ml",
       },
     },
