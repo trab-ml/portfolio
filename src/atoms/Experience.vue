@@ -1,7 +1,7 @@
 <template>
     <li>
         <hr v-if="index > 0" />
-        <div class="timeline-middle text-black bg-white dark:bg-black dark:text-white">
+        <div class="timeline-middle text-black bg-white">
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
@@ -16,7 +16,7 @@
             </svg>
         </div>
         <div
-            :class="`${style} md:mb-10 p-2 border rounded-box hover:bg-gray-100 hover:cursor-pointer bg-white text-black dark:bg-black dark:text-white dark:hover:bg-(--dark-mode-secondary-bg-color)`"
+            :class="`${style} md:mb-10 p-2 border rounded-box hover:bg-gray-100 hover:cursor-pointer bg-white text-black`"
             @click="handleClick"
         >
             <time class="font-mono italic">{{
@@ -27,7 +27,7 @@
         <hr />
     </li>
     <dialog :id="modalId" class="modal">
-        <div class="modal-box dark:bg-black dark:text-white">
+        <div class="modal-box">
             <h3 class="text-md font-semibold md:text-lg">
                 {{ experience.title }} -
 

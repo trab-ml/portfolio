@@ -1,27 +1,12 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
-@custom-variant dark (&:where(.dark, .dark *));
-
 :root {
     --component-bg-primary-color: #f9fafb;
-    --dark-mode-main-bg-color: #1c222a;
-    --dark-mode-secondary-bg-color: #343844;
-    --dark-mode-main-text-color: #ffffff;
-    color-scheme: light;
-}
-
-:root.dark {
-    color-scheme: dark;
 }
 
 main {
     min-height: calc(100vh - 6.7rem);
-}
-
-html,
-body {
-    color-scheme: inherit;
 }
 
 body {
