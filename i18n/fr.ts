@@ -24,6 +24,7 @@ export const fr = {
     status: "Disponible pour travailler",
     mobility: "France entière",
     downloadTheCV: "Télécharger mon CV",
+    qrCode: "QR-CODE",
     professional_experience: {
       title: "Expériences professionnelles",
       experiences: [
