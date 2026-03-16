@@ -12,9 +12,18 @@
         <pre data-prefix="6" class="text-success"><code>"mobility": "{{ $t('homepage.mobility') }}",</code></pre>
         <pre data-prefix="7"><code>}</code></pre>
       </div>
-      <div class="block max-w-fit mx-auto mt-4 border rounded-md">
+      <div class="flex gap-3 max-w-fit mx-auto mt-4">
         <a href="Bernard_TRAORE (CV).pdf" download>
-          <button class="btn download-btn dark:text-amber-50 dark:bg-black">{{ $t('homepage.downloadTheCV') }}<i class="fas fa-download"></i></button>
+          <button class="btn border rounded-md dark:text-amber-50 dark:bg-black">
+            <file-download-outline-icon class="mb-2 text-xl text-md-3xl"/>
+            {{ $t('homepage.downloadTheCV') }}
+          </button>
+        </a>
+        <a href="cv-qr-code.png" target="__blank">
+          <button class="btn border rounded-md dark:text-amber-50 dark:bg-black">
+            <eye-outline-icon class="mb-2 text-xl text-md-3xl"/>
+            {{ $t('homepage.qrCode') }}
+          </button>
         </a>
       </div>
     </div>
@@ -26,4 +35,6 @@
 <script setup lang="ts">
 import Experiences from "../molecules/Experiences.vue"
 import Projects from "../molecules/Projects.vue"
+import FileDownloadOutlineIcon from 'icons/FileDownloadOutline.vue'
+import EyeOutlineIcon from 'icons/EyeOutline.vue'
 </script>

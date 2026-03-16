@@ -23,6 +23,7 @@ export const en = {
         status: "Open to work",
         mobility: "France-wide",
         downloadTheCV: "Download my CV",
+        qrCode: "Website QR-CODE",
         professional_experience: {
             title: "Work Experience",
             experiences: [
