@@ -2,14 +2,14 @@
   "files": [],
   "references": [
     { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
+    { "path": "./tsconfig.node.json" },
   ],
-  "types" : [ "node" ],
+  "types": ["node"],
   "compilerOptions": {
     "baseUrl": "../",
     "paths": {
       "@/*": ["./src/*"],
       "icons": ["./node_modules/vue-material-design-icons"],
-    }
-  }
+    },
+  },
 }

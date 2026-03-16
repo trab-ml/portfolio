@@ -1,15 +1,22 @@
 <!doctype html>
-<html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Le site web de mon portfolio hébergé sur github. My portfolio website hosted on github.">
-    <meta name="color-scheme" content="light dark">
-    <link rel="icon" type="image/svg+xml" href="/coding-tag-on-pc.png" />
-    <title>Bernard TRAORÉ</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+<html lang="fr" data-theme="light">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Le site web de mon portfolio hébergé sur github. My portfolio website hosted on github."
+        />
+        <link rel="icon" type="image/svg+xml" href="/coding-tag-on-pc.png" />
+        <title>Bernard TRAORÉ</title>
+        <script type="module">
+            import { setUpInitialTheme } from "./src/utils/themeUtils.ts";
+
+            setUpInitialTheme();
+        </script>
+    </head>
+    <body>
+        <div id="app"></div>
+        <script type="module" src="/src/main.ts"></script>
+    </body>
 </html>
