@@ -14,8 +14,9 @@ export const en = {
   homepage: {
     description: "My portfolio website hosted on github 'welcome page'.",
     title: {
-      partOne: "Hello there,",
-      partTwo: "welcome on my portfolio website.",
+      partOne: "Have a project idea or a specific business need ?",
+      partTwo: "As a Full Stack Developer, I design modern applications used in production with a constant focus on reliability, performance, and user experience.",
+      partThree: "Let's discuss how I can contribute to your challenges !",
     },
     firstname: "Bernard",
     lastname: "TRAORÉ",
@@ -23,7 +24,7 @@ export const en = {
     status: "Open to work",
     mobility: "France-wide",
     downloadTheCV: "Download my CV",
-    qrCode: "QR-CODE",
+    qrCode: "QR-CODE site web",
     professional_experience: {
       title: "Work Experience",
       experiences: [
