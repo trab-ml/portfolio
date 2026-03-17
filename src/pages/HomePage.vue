@@ -1,14 +1,16 @@
 <template>
     <section class="flex flex-col items-center sm:flex-row sm:items-start">
-        <h1
-            class="text-3xl font-bold sm:w-1/3 sm:mt-2 md:w-full text-black"
-        >
-            {{ $t("homepage.title.partOne") }}
-            <span class="text-3xl font-light">{{
+        <h1 class="text-xl text-black px-2 font-bold sm:px-0 sm:w-1/3 sm:mt-4 md:w-full md:px-0 lg:text-3xl">
+            {{ $t("homepage.title.partOne") }} <br />
+            <span class="font-light">{{
                 $t("homepage.title.partTwo")
             }}</span>
+            <br />
+            <span class="font-semi-bold">{{
+                $t("homepage.title.partThree")
+            }}</span>
         </h1>
-        <div class="w-full mt-1 sm:w-2/3 md:w-full sm:mt-12">
+        <div class="w-full mt-1 sm:w-2/3 sm:mt-12 md:w-full">
             <div class="mockup-code">
                 <pre data-prefix="1"><code>const profile = {</code></pre>
                 <pre
@@ -35,20 +37,19 @@
             </div>
             <div class="flex gap-3 max-w-fit mx-auto mt-4">
                 <a href="Bernard_TRAORE (CV).pdf" download>
+                    <button class="btn border rounded-md">
+                        <file-download-outline-icon
+                            class="mb-2 text-xl text-md-3xl"
+                        />
+                        {{ $t("homepage.downloadTheCV") }}
+                    </button>
+                </a>
+                <a href="cv-qr-code.png" target="__blank">
                     <button
-                        class="btn border rounded-md"
+                        class="btn border rounded-md dark:text-amber-50 dark:bg-black"
                     >
-                        
-            <file-download-outline-icon class="mb-2 text-xl text-md-3xl"/>
-            {{ $t("homepage.downloadTheCV")
-                        }}
-          </button>
-        </a>
-        <a href="cv-qr-code.png" target="__blank">
-          <button class="btn border rounded-md dark:text-amber-50 dark:bg-black">
-            <eye-outline-icon class="mb-2 text-xl text-md-3xl"/>
-            {{ $t('homepage.qrCode') }}
-          
+                        <eye-outline-icon class="mb-2 text-xl text-md-3xl" />
+                        {{ $t("homepage.qrCode") }}
                     </button>
                 </a>
             </div>
@@ -59,8 +60,8 @@
 </template>
 
 <script setup lang="ts">
-import Experiences from "../molecules/Experiences.vue"
-import Projects from "../molecules/Projects.vue"
-import FileDownloadOutlineIcon from 'icons/FileDownloadOutline.vue'
-import EyeOutlineIcon from 'icons/EyeOutline.vue'
+import Experiences from "../molecules/Experiences.vue";
+import Projects from "../molecules/Projects.vue";
+import FileDownloadOutlineIcon from "icons/FileDownloadOutline.vue";
+import EyeOutlineIcon from "icons/EyeOutline.vue";
 </script>
