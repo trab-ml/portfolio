@@ -99,6 +99,7 @@ export const en = {
           repositoryUrl: "https://github.com/trab-ml/notesapp",
           category: "Front",
           technologies: ["React", "TypeScript", "Firebase"],
+          updatedAt: "2025-08-28",
         },
         {
           id: 2,
@@ -109,6 +110,7 @@ export const en = {
           secondRepositoryUrl: "https://github.com/trab-ml/fammeal-back",
           category: "Fullstack",
           technologies: ["Android Studio", "Java", "Openapi Generator"],
+          updatedAt: "2025-03-24",
         },
         {
           id: 3,
@@ -119,6 +121,7 @@ export const en = {
           repositoryUrl: "https://github.com/trab-ml/DPEWeb_Broutin_Traore",
           category: "Fullstack",
           technologies: ["JSP", "Java", "SQL"],
+          updatedAt: "2025-01-05",
         },
         {
           id: 4,
@@ -129,6 +132,7 @@ export const en = {
           repositoryUrl: "https://github.com/trab-ml/jpp",
           category: "Fullstack",
           technologies: ["JavaScript", "Php", "MySQL"],
+          updatedAt: "2024-05-17",
         },
         {
           id: 5,
@@ -139,6 +143,7 @@ export const en = {
           repositoryUrl: "https://github.com/trab-ml/lisp?tab=readme-ov-file",
           category: "Algorithm",
           technologies: ["Java"],
+          updatedAt: "2024-03-31",
         },
         {
           id: 6,
@@ -149,6 +154,7 @@ export const en = {
           repositoryUrl: "https://github.com/trab-ml/classifier",
           category: "AI",
           technologies: ["Python", "Pandas", "Scikit-learn"],
+          updatedAt: "2024-12-03",
         },
         {
           id: 7,
@@ -160,6 +166,7 @@ export const en = {
           repositoryUrl: "https://github.com/trab-ml/spicy-food",
           category: "Front",
           technologies: ["HTML", "JavaScript", "Tailwind CSS"],
+          updatedAt: "2023-01-27",
         },
         {
           id: 8,
@@ -172,6 +179,7 @@ export const en = {
             "https://github.com/trab-ml/landing-page?tab=readme-ov-file",
           category: "Front",
           technologies: ["HTML", "CSS", "SASS"],
+          updatedAt: "2023-08-12",
         },
         {
           id: 9,
@@ -183,6 +191,7 @@ export const en = {
             "https://github.com/trab-ml/stdb/tree/master?tab=readme-ov-file",
           category: "Front",
           technologies: ["React", "CSS"],
+          updatedAt: "2023-04-26",
         },
         {
           id: 10,
@@ -194,6 +203,7 @@ export const en = {
             "https://github.com/trab-ml/stdb/tree/master?tab=readme-ov-file",
           category: "Front",
           technologies: ["HTML", "CSS", "SASS", "JavaScript"],
+          updatedAt: "2023-07-19",
         },
         {
           id: 11,
@@ -205,6 +215,7 @@ export const en = {
             "https://github.com/trab-ml/css-dashboard?tab=readme-ov-file",
           category: "Front",
           technologies: ["HTML", "CSS"],
+          updatedAt: "2023-07-18",
         },
         {
           id: 12,
@@ -216,6 +227,7 @@ export const en = {
           repositoryUrl: "https://github.com/trab-ml/dream-home",
           category: "Front",
           technologies: ["React", "CSS", "Bootstrap"],
+          updatedAt: "2023-07-18",
         },
         {
           id: 13,
@@ -226,6 +238,7 @@ export const en = {
           repositoryUrl: "https://github.com/trab-ml/mysh",
           category: "Operating System",
           technologies: ["C"],
+          updatedAt: "2023-12-31",
         },
         {
           id: 14,
@@ -237,12 +250,24 @@ export const en = {
           repositoryUrl: "https://github.com/trab-ml/lasso",
           category: "Front",
           technologies: ["Php", "JavaScript", "Bootstrap"],
+          updatedAt: "2026-01-22",
+        },
+        {
+          id: 15,
+          title: "Movie Database",
+          description:
+            "An intuitive web application allowing users to discover and filter movies according to their profile, developed with Spring Boot and Vue.js, and powered by The Movie Database API.",
+          imageUrl: "project-default-img.png",
+          projectUrl: "",
+          repositoryUrl: "https://github.com/trab-ml/tmdb",
+          category: "Fullstack",
+          technologies: ["Java", "Spring Boot", "Vue", "TypeScript", "Vuetify"],
+          updatedAt: "2026-02-14",
         },
       ],
     },
     footer: {
       contact: {
-        phone: "+33753855479",
         email: "btra2420{'@'}gmail.com",
         linkedin: "https://www.linkedin.com/in/bernart0123456789/",
         github: "https://github.com/trab-ml",
