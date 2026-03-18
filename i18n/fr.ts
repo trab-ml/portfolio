@@ -254,11 +254,22 @@ export const fr = {
           technologies: ["Php", "JavaScript", "Bootstrap"],
           updatedAt: "2026-01-22",
         },
+        {
+          id: 15,
+          title: "Movie Database",
+          description:
+            "Une application web intuitive permettant aux utilisateurs de découvrir et filtrer des films selon leur profil, développée avec Spring Boot et Vue.js, et alimentée par l'API The Movie Database.",
+          imageUrl: "project-default-img.png",
+          projectUrl: "",
+          repositoryUrl: "https://github.com/trab-ml/tmdb",
+          category: "Fullstack",
+          technologies: ["Java", "Spring Boot", "Vue", "TypeScript", "Vuetify"],
+          updatedAt: "2026-02-14",
+        },
       ],
     },
     footer: {
       contact: {
-        phone: "+33753855479",
         email: "btra2420{'@'}gmail.com",
         linkedin: "https://www.linkedin.com/in/bernart0123456789/",
         github: "https://github.com/trab-ml",
