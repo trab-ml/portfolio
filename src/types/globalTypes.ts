@@ -19,6 +19,7 @@ export type TProject = {
   secondRepositoryUrl?: string;
   category: Category;
   technologies: string[];
+  updatedAt: string;
 };
 
 export type TInternShip = {

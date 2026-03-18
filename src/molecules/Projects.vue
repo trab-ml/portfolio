@@ -52,12 +52,23 @@ const projects = computed<TProject[]>(() => {
     return tm("homepage.dev_projects.projects") as TProject[];
 });
 
+const sortByUpdateDate = (projects: TProject[]) => {
+    const sortedProjectsList = projects.sort(
+        (projectOne, projectTwo) =>
+            Date.parse(projectTwo.updatedAt) - Date.parse(projectOne.updatedAt),
+    );
+    console.log(sortedProjectsList);
+    return sortedProjectsList;
+};
+
 const projectListFiltered = computed(() => {
     if (checkedCategories.value.length === 0) {
-        return projects.value;
+        return sortByUpdateDate(projects.value);
     }
-    return projects.value.filter((p: TProject) =>
+
+    const projectsByCategory = projects.value.filter((p: TProject) =>
         checkedCategories.value.includes(p.category),
     );
+    return sortByUpdateDate(projectsByCategory);
 });
 </script>
