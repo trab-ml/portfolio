@@ -86,6 +86,7 @@ export const en = {
       seeDeployedProject: "See deployed project",
       seeCode: {
         title: "Code",
+        secondRepo: "#2",
         desc: "See the code",
       },
       noMatchingProject: "No matching project",
