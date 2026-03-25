@@ -35,6 +35,16 @@
                     <code-braces-icon />
                     {{ $t("homepage.dev_projects.seeCode.title") }}
                 </a>
+                <a
+                    v-if="project.secondRepositoryUrl"
+                    :href="project.secondRepositoryUrl"
+                    target="_blank"
+                    class="tooltip cursor-pointer underline underline-offset-3 hover:no-underline"
+                    :data-tip="$t('homepage.dev_projects.seeCode.desc')"
+                >
+                    <code-braces-icon />
+                    {{ $t("homepage.dev_projects.seeCode.secondRepo") }}
+                </a>
                 <span
                     :class="`badge ${categoriesColors.get(project.category)} text-xs md:text-md`"
                     >{{ project.category }}</span
