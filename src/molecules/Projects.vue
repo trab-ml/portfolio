@@ -35,7 +35,7 @@
 </template>
 
 <script setup lang="ts">
-import Project from "../atoms/Project.vue";
+import Project from "@/atoms/Project.vue";
 import { computed, ref } from "vue";
 import { useI18n } from "vue-i18n";
 import { Category, type TProject } from "../types/globalTypes.ts";
@@ -57,7 +57,6 @@ const sortByUpdateDate = (projects: TProject[]) => {
         (projectOne, projectTwo) =>
             Date.parse(projectTwo.updatedAt) - Date.parse(projectOne.updatedAt),
     );
-    console.log(sortedProjectsList);
     return sortedProjectsList;
 };
 

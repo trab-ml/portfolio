@@ -7,7 +7,7 @@
 </template>
 
 <script setup lang="js">
-import Header from "./atoms/Header.vue";
+import Header from "@/atoms/Header.vue";
 import { RouterView } from "vue-router";
-import Footer from "./atoms/Footer.vue";
+import Footer from "@/atoms/Footer.vue";
 </script>
