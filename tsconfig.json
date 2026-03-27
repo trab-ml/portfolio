@@ -1,19 +1,16 @@
 {
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" },
-  ],
-  "types": ["node"],
-  "compilerOptions": {
-    "composite": true,
-    "emitDeclarationOnly": true,
-    "allowImportingTsExtensions": true,
-    "baseUrl": "./",
-    "paths": {
-      "@/*": ["src/*"],
-      "icons": ["./node_modules/vue-material-design-icons"],
+    "files": [],
+    "references": [
+        { "path": "./tsconfig.app.json" },
+        { "path": "./tsconfig.node.json" }
+    ],
+    "types": ["node"],
+    "compilerOptions": {
+        "composite": true,
+        "baseUrl": "./",
+        "paths": {
+            "@/*": ["src/*"],
+            "icons": ["./node_modules/vue-material-design-icons"]
+        }
     },
-  },
-  "include": ["./src"],
 }

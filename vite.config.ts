@@ -8,9 +8,6 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd());
 
   return {
-    define: {
-      "import.meta.env.VITE_REPO_NAME": JSON.stringify(env.VITE_REPO_NAME),
-    },
     base: `/${env.VITE_REPO_NAME}/`,
     plugins: [vue(), tailwindcss(), qrcode()],
     resolve: {
@@ -21,7 +18,7 @@ export default defineConfig(({ mode }) => {
           "node_modules/vue-material-design-icons",
         ),
       },
-      extensions: [".vue"],
+      extensions: [".js", ".ts", ".vue", ".json"],
     },
   };
 });
