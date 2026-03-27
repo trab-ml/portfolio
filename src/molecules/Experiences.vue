@@ -24,7 +24,7 @@
 <script setup lang="ts">
 import Experience from "@/atoms/Experience.vue";
 import { useI18n } from "vue-i18n";
-import { type TInternShip } from "@/types/globalTypes.ts";
+import { type TInternShip } from "@/types/globalTypes";
 import { computed } from "vue";
 
 const { tm } = useI18n();

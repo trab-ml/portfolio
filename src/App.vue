@@ -6,7 +6,7 @@
     <Footer />
 </template>
 
-<script setup lang="js">
+<script setup lang="ts">
 import Header from "@/atoms/Header.vue";
 import { RouterView } from "vue-router";
 import Footer from "@/atoms/Footer.vue";
