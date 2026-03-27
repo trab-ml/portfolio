@@ -6,10 +6,14 @@
   ],
   "types": ["node"],
   "compilerOptions": {
-    "baseUrl": "../",
+    "composite": true,
+    "emitDeclarationOnly": true,
+    "allowImportingTsExtensions": true,
+    "baseUrl": "./",
     "paths": {
-      "@/*": ["./src/*"],
+      "@/*": ["src/*"],
       "icons": ["./node_modules/vue-material-design-icons"],
     },
   },
+  "include": ["./src"],
 }

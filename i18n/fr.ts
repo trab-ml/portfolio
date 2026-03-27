@@ -249,7 +249,7 @@ export const fr = {
           description:
             "Site web d'une association à but non lucratif engagée dans la lutte contre les inégalités en matière d'éducation et l'élargissement de l'accès à un enseignement de qualité pour tous.",
           imageUrl: "act-now.png",
-          projectUrl: "https://lasso-education.up.railway.app/",
+          projectUrl: "https://lasso-v1-0-0.onrender.com/",
           repositoryUrl: "https://github.com/trab-ml/lasso",
           category: "Front",
           technologies: ["Php", "JavaScript", "Bootstrap"],
