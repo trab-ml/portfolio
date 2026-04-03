@@ -141,7 +141,7 @@ export const en = {
           description:
             "Lisp interpreter (imperative and functional programming language) written in Java.",
           imageUrl: "project-default-img.png",
-          repositoryUrl: "https://github.com/trab-ml/lisp?tab=readme-ov-file",
+          repositoryUrl: "https://github.com/trab-ml/lisp",
           category: "Algorithm",
           technologies: ["Java"],
           updatedAt: "2024-03-31",
@@ -177,7 +177,7 @@ export const en = {
           imageUrl: "the-box.png",
           projectUrl: "https://trab-ml.github.io/landing-page/",
           repositoryUrl:
-            "https://github.com/trab-ml/landing-page?tab=readme-ov-file",
+            "https://github.com/trab-ml/landing-page",
           category: "Front",
           technologies: ["HTML", "CSS", "SASS"],
           updatedAt: "2023-08-12",
@@ -189,7 +189,7 @@ export const en = {
           imageUrl: "dream-bank.png",
           projectUrl: "https://trab-ml.github.io/stdb/",
           repositoryUrl:
-            "https://github.com/trab-ml/stdb/tree/master?tab=readme-ov-file",
+            "https://github.com/trab-ml/stdb/tree/master",
           category: "Front",
           technologies: ["React", "CSS"],
           updatedAt: "2023-04-26",
@@ -201,7 +201,7 @@ export const en = {
           imageUrl: "dream-immo.png",
           projectUrl: "https://trab-ml.github.io/Dreamhome/",
           repositoryUrl:
-            "https://github.com/trab-ml/stdb/tree/master?tab=readme-ov-file",
+            "https://github.com/trab-ml/stdb/tree/master",
           category: "Front",
           technologies: ["HTML", "CSS", "SASS", "JavaScript"],
           updatedAt: "2023-07-19",
@@ -213,7 +213,7 @@ export const en = {
           imageUrl: "a-dash.png",
           projectUrl: "https://trab-ml.github.io/css-dashboard/",
           repositoryUrl:
-            "https://github.com/trab-ml/css-dashboard?tab=readme-ov-file",
+            "https://github.com/trab-ml/css-dashboard",
           category: "Front",
           technologies: ["HTML", "CSS"],
           updatedAt: "2023-07-18",
