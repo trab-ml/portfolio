@@ -36,7 +36,7 @@
                 <pre data-prefix="7"><code>}</code></pre>
             </div>
             <div class="flex gap-3 max-w-fit mx-auto mt-4">
-                <a href="Bernard_TRAORE (CV).pdf" download>
+                <a href="Bernard_T.(CV).pdf" download>
                     <button class="btn border rounded-md">
                         <file-download-outline-icon
                             class="mb-2 text-xl text-md-3xl"
