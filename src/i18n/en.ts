@@ -161,13 +161,13 @@ export const en = {
           id: 7,
           title: "Spicy Food",
           description:
-            "Front-end integration to design a restaurant showcase website.",
+            "Website of a restaurant specialized on spiced and flavoured foods.",
           imageUrl: "spicy-food.png",
-          projectUrl: "https://trab-ml.github.io/spicy-food/",
-          repositoryUrl: "https://github.com/trab-ml/spicy-food",
+          projectUrl: "https://trab-ml.github.io/spicyfood/",
+          repositoryUrl: "https://github.com/trab-ml/spicyfood",
           category: "Front",
           technologies: ["HTML", "JavaScript", "Tailwind CSS"],
-          updatedAt: "2023-01-27",
+          updatedAt: "2026-04-06",
         },
         {
           id: 8,
