@@ -163,13 +163,13 @@ export const fr = {
           id: 7,
           title: "Spicy Food",
           description:
-            "Intégration front visant à concevoir un site vitrine de restaurant.",
+            "Site vitrine d'un restaurant exotique aux saveurs épicées.",
           imageUrl: "spicy-food.png",
-          projectUrl: "https://trab-ml.github.io/spicy-food/",
-          repositoryUrl: "https://github.com/trab-ml/spicy-food",
+          projectUrl: "https://trab-ml.github.io/spicyfood/",
+          repositoryUrl: "https://github.com/trab-ml/spicyfood",
           category: "Front",
           technologies: ["HTML", "JavaScript", "Tailwind CSS"],
-          updatedAt: "2023-01-27",
+          updatedAt: "2026-04-06",
         },
         {
           id: 8,
