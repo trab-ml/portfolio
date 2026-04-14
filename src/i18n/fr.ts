@@ -1,286 +1,173 @@
 export const fr = {
-  abbreviation: "Fr",
-  header: {
-    nav: {
-      menu: "Menu",
-      experiences: "Expériences",
-      projects: "Projets",
-      contact: "Contactez-moi",
+    abbreviation: "Fr",
+    header: {
+        nav: {
+            menu: "Menu",
+            experiences: "Expériences",
+            projects: "Projets",
+            contact: "Contactez-moi",
+        },
+        language: {
+            label: "Sélectionner une langue",
+        },
     },
-    language: {
-      label: "Sélectionner une langue",
+    homepage: {
+        description:
+            "La page 'd\'accueil' du site web de mon portfolio hébergé sur github.",
+        title: {
+            partOne: "Une idée de projet ou un besoin métier concret ?",
+            partTwo:
+                "Développeur Full Stack, je conçois des applications modernes utilisées en production avec un souci constant de fiabilibé, de performance et d'expérience utilisateur.",
+            partThree:
+                "Discutons de la manière dont je peux contribuer à vos enjeux !",
+        },
+        firstname: "Bernard",
+        lastname: "TRAORÉ",
+        job: "Ingénieur Logiciel",
+        status: "Disponible pour travailler",
+        mobility: "France entière",
+        downloadTheCV: "Télécharger mon CV",
+        qrCode: "QR-CODE du site",
+        professional_experience: {
+            title: "Expériences professionnelles",
+            experiences: [
+                {
+                    title: "Dévelopeur Full Stack",
+                    company: "Nextoo",
+                    companyWebsite: "https://nextoo.fr/",
+                    startDate: "31 Mars 2025",
+                    endDate: "31 Août 2025",
+                    period: "5 mois",
+                    description:
+                        "J'ai participé à une formation technique intensive où des responsables techniques expérimentés (Tech Leads) m'ont accompagné sur des technologies clés comme Spring, Vue et les pratiques DevOps. Au cœur du projet, j'ai contribué au développement d'une application métier au sein d'une équipe agile, passant de la conception de nouvelles fonctionnalités à la résolution de bugs critiques impactant l'expérience utilisateur. Cette expérience m'a permis d'évoluer dans un environnement collaboratif où le duo de développeurs et les revues de code régulières ont enrichi ma vision d'un développement logiciel de qualité.",
+                    technologies: [
+                        "JavaScript",
+                        "Vue.js",
+                        "Vuetify",
+                        "TypeScript",
+                        "Node.js",
+                        "Java",
+                        "Spring Boot",
+                        "Hibernate",
+                        "Docker",
+                        "Docker Compose",
+                        "PostgreSql",
+                    ],
+                },
+                {
+                    title: "Dévelopeur Backend",
+                    company: "Wezaart",
+                    companyWebsite:
+                        "https://www.linkedin.com/company/wezaart/about/",
+                    startDate: "02 Avril 2024",
+                    endDate: "24 Mai 2024",
+                    period: "2 mois",
+                    description:
+                        "Je me suis lancé dans la conception d'API REST avec TypeScript et NestJS, découvrant l'art de la modélisation de données PostgreSQL grâce à Prisma ORM. Le défi technique le plus enrichissant a été la réalisation de benchmarks qui ont révélé des opportunités d'optimisation inattendues, générant des gains de performance sur nos requêtes les plus critiques. Rapidement intégré à une équipe produit dynamique, j'ai pu participer à des brainstormings créatifs et co-rédiger des spécifications techniques, tout en gagnant progressivement en autonomie sur mes choix architecturaux.",
+                    technologies: [
+                        "JavaScript",
+                        "Nest.js",
+                        "TypeScript",
+                        "Node.js",
+                        "Prisma",
+                    ],
+                },
+                {
+                    title: "Dévelopeur Frontend",
+                    company: "StudentBank",
+                    companyWebsite:
+                        "https://lescalator.com/startups/student-bank/",
+                    startDate: "03 Avril 2025",
+                    endDate: "30 Mai 2025",
+                    period: "2 mois",
+                    description:
+                        "J'ai transformé des maquettes Figma en interfaces web dynamiques et réactives, maîtrisant l'écosystème React.js et Tailwind CSS pour créer des expériences utilisateur fluides et performantes. Le défi technique consistait à développer une suite de composants réutilisables et entièrement réactifs, garantissant une expérience cohérente sur tous les appareils. En étroite collaboration avec les équipes design et produit dans un cadre agile, j'ai contribué à améliorer les standards de qualité en optimisant chaque détail de performance afin d'offrir une navigation fluide aux utilisateurs finaux.",
+                    technologies: [
+                        "JavaScript",
+                        "React.js",
+                        "Node.js",
+                        "Bootstrap",
+                    ],
+                },
+            ],
+        },
+        dev_projects: {
+            title: "Projets",
+            seeDeployedProject: "Voir le projet déployé",
+            seeCode: {
+                title: "Code",
+                secondRepo: "#2",
+                desc: "Voir le code",
+            },
+            noMatchingProject: "Aucun projet correspondant",
+            projects: {
+                1: {
+                    description:
+                        "Application web de prise de notes rapide, fiable et utilisable même hors ligne.",
+                },
+                2: {
+                    description:
+                        "Application mobile intuitive pour organiser et gérer ses repas au quotidien.",
+                },
+                3: {
+                    description:
+                        "Plateforme d'analyse urbaine permettant d'évaluer la performance d'une ville ou d'une rue.",
+                },
+                4: {
+                    description:
+                        "Outil web complet pour gérer efficacement le planning d'un établissement scolaire.",
+                },
+                5: {
+                    description:
+                        "Interpréteur Lisp développé en Java, combinant paradigmes impératif et fonctionnel.",
+                },
+                6: {
+                    description:
+                        "Implémentation d'un classificateur basé sur les arbres de décision pour l'analyse de données.",
+                },
+                7: {
+                    description:
+                        "Site vitrine immersif mettant en valeur un restaurant aux saveurs exotiques.",
+                },
+                8: {
+                    description:
+                        "Intégration front moderne pour la création d'un site vitrine d'entreprise.",
+                },
+                9: {
+                    description:
+                        "Site vitrine élégant pour valoriser les services d'une agence immobilière.",
+                },
+                10: {
+                    description:
+                        "Template de dashboard administrateur modulable et prêt à l'emploi.",
+                },
+                11: {
+                    description:
+                        "Intégration complète d'un site immobilier avec une interface claire et performante.",
+                },
+                12: {
+                    description:
+                        "Plateforme immobilière permettant de rechercher et consulter des biens facilement.",
+                },
+                13: {
+                    description:
+                        "Mini-shell Unix en C permettant l'exécution de commandes et la gestion des processus.",
+                },
+                14: {
+                    description:
+                        "Site web engagé pour une association œuvrant pour l'égalité d'accès à l'éducation.",
+                },
+                15: {
+                    description:
+                        "Application de recommandation de films personnalisée avec Spring Boot et Vue.js.",
+                },
+            },
+        },
     },
-  },
-  homepage: {
-    description:
-      "La page 'd\'accueil' du site web de mon portfolio hébergé sur github.",
-    title: {
-      partOne: "Une idée de projet ou un besoin métier concret ?",
-      partTwo: "Développeur Full Stack, je conçois des applications modernes utilisées en production avec un souci constant de fiabilibé, de performance et d'expérience utilisateur.",
-      partThree: "Discutons de la manière dont je peux contribuer à vos enjeux !",
+    notFoundPage: {
+        title: "404 Page non trouvée !",
+        callToAction: "Retourner à l'accueil",
+        description:
+            "Page 'non trouvée' du site web de mon portfolio hébergé sur github.",
     },
-    firstname: "Bernard",
-    lastname: "TRAORÉ",
-    job: "Ingénieur Logiciel",
-    status: "Disponible pour travailler",
-    mobility: "France entière",
-    downloadTheCV: "Télécharger mon CV",
-    qrCode: "QR-CODE du site",
-    professional_experience: {
-      title: "Expériences professionnelles",
-      experiences: [
-        {
-          title: "Dévelopeur Full Stack",
-          company: "Nextoo",
-          companyWebsite: "https://nextoo.fr/",
-          startDate: "31 Mars 2025",
-          endDate: "31 Août 2025",
-          period: "5 mois",
-          description:
-            "J'ai participé à une formation technique intensive où des responsables techniques expérimentés (Tech Leads) m'ont accompagné sur des technologies clés comme Spring, Vue et les pratiques DevOps. Au cœur du projet, j'ai contribué au développement d'une application métier au sein d'une équipe agile, passant de la conception de nouvelles fonctionnalités à la résolution de bugs critiques impactant l'expérience utilisateur. Cette expérience m'a permis d'évoluer dans un environnement collaboratif où le duo de développeurs et les revues de code régulières ont enrichi ma vision d'un développement logiciel de qualité.",
-          technologies: [
-            "JavaScript",
-            "Vue.js",
-            "Vuetify",
-            "TypeScript",
-            "Node.js",
-            "Java",
-            "Spring Boot",
-            "Hibernate",
-            "Docker",
-            "Docker Compose",
-            "PostgreSql",
-          ],
-        },
-        {
-          title: "Dévelopeur Backend",
-          company: "Wezaart",
-          companyWebsite: "https://www.linkedin.com/company/wezaart/about/",
-          startDate: "02 Avril 2024",
-          endDate: "24 Mai 2024",
-          period: "2 mois",
-          description:
-            "Je me suis lancé dans la conception d'API REST avec TypeScript et NestJS, découvrant l'art de la modélisation de données PostgreSQL grâce à Prisma ORM. Le défi technique le plus enrichissant a été la réalisation de benchmarks qui ont révélé des opportunités d'optimisation inattendues, générant des gains de performance sur nos requêtes les plus critiques. Rapidement intégré à une équipe produit dynamique, j'ai pu participer à des brainstormings créatifs et co-rédiger des spécifications techniques, tout en gagnant progressivement en autonomie sur mes choix architecturaux.",
-          technologies: [
-            "JavaScript",
-            "Nest.js",
-            "TypeScript",
-            "Node.js",
-            "Prisma",
-          ],
-        },
-        {
-          title: "Dévelopeur Frontend",
-          company: "StudentBank",
-          companyWebsite: "https://lescalator.com/startups/student-bank/",
-          startDate: "03 Avril 2025",
-          endDate: "30 Mai 2025",
-          period: "2 mois",
-          description:
-            "J'ai transformé des maquettes Figma en interfaces web dynamiques et réactives, maîtrisant l'écosystème React.js et Tailwind CSS pour créer des expériences utilisateur fluides et performantes. Le défi technique consistait à développer une suite de composants réutilisables et entièrement réactifs, garantissant une expérience cohérente sur tous les appareils. En étroite collaboration avec les équipes design et produit dans un cadre agile, j'ai contribué à améliorer les standards de qualité en optimisant chaque détail de performance afin d'offrir une navigation fluide aux utilisateurs finaux.",
-          technologies: ["JavaScript", "React.js", "Node.js", "Bootstrap"],
-        },
-      ],
-    },
-    dev_projects: {
-      title: "Projets",
-      seeDeployedProject: "Voir le projet déployé",
-      seeCode: {
-        title: "Code",
-        secondRepo: "#2",
-        desc: "Voir le code",
-      },
-      noMatchingProject: "Aucun projet correspondant",
-      projects: [
-        {
-          id: 1,
-          title: "Notesapp",
-          description:
-            "Solution web de prise de notes avec fonctionnalité hors-ligne.",
-          imageUrl: "notesapp.png",
-          projectUrl: "https://notesapp-f639b.web.app/",
-          repositoryUrl: "https://github.com/trab-ml/notesapp",
-          category: "Front",
-          technologies: ["React", "TypeScript", "Firebase"],
-          updatedAt: "2025-08-28",
-        },
-        {
-          id: 2,
-          title: "Fammeal",
-          description: "Application mobile de gestion de repas.",
-          imageUrl: "project-default-img.png",
-          repositoryUrl: "https://github.com/trab-ml/fammeal-front",
-          secondRepositoryUrl: "https://github.com/trab-ml/fammeal-back",
-          category: "Fullstack",
-          technologies: ["Android Studio", "Java", "Openapi Generator"],
-          updatedAt: "2025-03-24",
-        },
-        {
-          id: 3,
-          title: "DPEWeb",
-          description:
-            "Application web permettant de déterminer les indices de performance d'une ville et éventuellement d'une rue données.",
-          imageUrl: "project-default-img.png",
-          repositoryUrl: "https://github.com/trab-ml/DPEWeb_Broutin_Traore",
-          category: "Fullstack",
-          technologies: ["JSP", "Java", "SQL"],
-          updatedAt: "2025-01-05",
-        },
-        {
-          id: 4,
-          title: "JPP",
-          description:
-            "Solution web permettant de gérer le planning d'un établissement scolaire.",
-          imageUrl: "project-default-img.png",
-          repositoryUrl: "https://github.com/trab-ml/jpp",
-          category: "Fullstack",
-          technologies: ["JavaScript", "Php", "MySQL"],
-          updatedAt: "2024-05-17",
-        },
-        {
-          id: 5,
-          title: "Lisp",
-          description:
-            "Interpréteur Lisp (langage de programmation impératif et fonctionnel) écrit en Java.",
-          imageUrl: "project-default-img.png",
-          repositoryUrl: "https://github.com/trab-ml/lisp",
-          category: "Algorithm",
-          technologies: ["Java"],
-          updatedAt: "2024-03-31",
-        },
-        {
-          id: 6,
-          title: "Classifier",
-          description:
-            "Projet d'études visant à implémenter un classificateur avec l'algorithme de l'arbre de décision.",
-          imageUrl: "classifier.png",
-          repositoryUrl: "https://github.com/trab-ml/classifier",
-          category: "AI",
-          technologies: ["Python", "Pandas", "Scikit-learn"],
-          updatedAt: "2024-12-03",
-        },
-        {
-          id: 7,
-          title: "Spicy Food",
-          description:
-            "Site vitrine d'un restaurant exotique aux saveurs épicées.",
-          imageUrl: "spicy-food.png",
-          projectUrl: "https://trab-ml.github.io/spicyfood/",
-          repositoryUrl: "https://github.com/trab-ml/spicyfood",
-          category: "Front",
-          technologies: ["HTML", "JavaScript", "Tailwind CSS"],
-          updatedAt: "2026-04-06",
-        },
-        {
-          id: 8,
-          title: "TheBox",
-          description:
-            "Intégration front ayant pour but de concevoir un site vitrine d'entreprise.",
-          imageUrl: "the-box.png",
-          projectUrl: "https://trab-ml.github.io/landing-page/",
-          repositoryUrl:
-            "https://github.com/trab-ml/landing-page",
-          category: "Front",
-          technologies: ["HTML", "CSS", "SASS"],
-          updatedAt: "2023-08-12",
-        },
-        {
-          id: 9,
-          title: "Dream Bank",
-          description: "Site vitrine d'une agence immobilière.",
-          imageUrl: "dream-bank.png",
-          projectUrl: "https://trab-ml.github.io/stdb/",
-          repositoryUrl:
-            "https://github.com/trab-ml/stdb/tree/master",
-          category: "Front",
-          technologies: ["React", "CSS"],
-          updatedAt: "2023-04-26",
-        },
-        {
-          id: 10,
-          title: "DreamImmo",
-          description: "Squelette de Dashboard pour Admin.",
-          imageUrl: "dream-immo.png",
-          projectUrl: "https://trab-ml.github.io/Dreamhome/",
-          repositoryUrl:
-            "https://github.com/trab-ml/stdb/tree/master",
-          category: "Front",
-          technologies: ["HTML", "CSS", "SASS", "JavaScript"],
-          updatedAt: "2023-07-19",
-        },
-        {
-          id: 11,
-          title: "ADash",
-          description: "Intégration du site web d'une agence immobilière.",
-          imageUrl: "a-dash.png",
-          projectUrl: "https://trab-ml.github.io/css-dashboard/",
-          repositoryUrl:
-            "https://github.com/trab-ml/css-dashboard",
-          category: "Front",
-          technologies: ["HTML", "CSS"],
-          updatedAt: "2023-07-18",
-        },
-        {
-          id: 12,
-          title: "Dream Home",
-          description:
-            "Site vitrine d'une agence imobilière pour consulter / rechercher des biens immobiliers.",
-          imageUrl: "dream-home.png",
-          projectUrl: "https://trab-ml.github.io/dream-home/",
-          repositoryUrl: "https://github.com/trab-ml/dream-home",
-          category: "Front",
-          technologies: ["React", "CSS", "Bootstrap"],
-          updatedAt: "2023-07-18",
-        },
-        {
-          id: 13,
-          title: "MySh",
-          description:
-            "Développement d'un mini-shell Unix (mysh) en langage C : implémentation d'une interface en ligne de commande permettant l'exécution de programmes, la gestion des processus et des commandes système.",
-          imageUrl: "my-sh.png",
-          repositoryUrl: "https://github.com/trab-ml/mysh",
-          category: "Operating System",
-          technologies: ["C"],
-          updatedAt: "2023-12-31",
-        },
-        {
-          id: 14,
-          title: "L'Asso",
-          description:
-            "Site web d'une association à but non lucratif engagée dans la lutte contre les inégalités en matière d'éducation et l'élargissement de l'accès à un enseignement de qualité pour tous.",
-          imageUrl: "act-now.png",
-          projectUrl: "https://lasso-v1-0-0.onrender.com/",
-          repositoryUrl: "https://github.com/trab-ml/lasso",
-          category: "Front",
-          technologies: ["Php", "JavaScript", "Bootstrap"],
-          updatedAt: "2026-01-22",
-        },
-        {
-          id: 15,
-          title: "Movie Database",
-          description:
-            "Une application web intuitive permettant aux utilisateurs de découvrir et filtrer des films selon leur profil, développée avec Spring Boot et Vue.js, et alimentée par l'API The Movie Database.",
-          imageUrl: "project-default-img.png",
-          projectUrl: "",
-          repositoryUrl: "https://github.com/trab-ml/tmdb",
-          category: "Fullstack",
-          technologies: ["Java", "Spring Boot", "Vue", "TypeScript", "Vuetify"],
-          updatedAt: "2026-02-14",
-        },
-      ],
-    },
-    footer: {
-      contact: {
-        email: "btra2420{'@'}gmail.com",
-        linkedin: "https://www.linkedin.com/in/bernart0123456789/",
-        github: "https://github.com/trab-ml",
-      },
-    },
-  },
-  notFoundPage: {
-    title: "404 Page non trouvée !",
-    callToAction: "Retourner à l'accueil",
-    description:
-      "Page 'non trouvée' du site web de mon portfolio hébergé sur github.",
-  },
 };

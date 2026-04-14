@@ -39,6 +39,7 @@ import Project from "@/atoms/Project.vue";
 import { computed, ref } from "vue";
 import { useI18n } from "vue-i18n";
 import { Category, type TProject } from "@/types/globalTypes";
+import { projectsList } from "@/data/projects";
 
 const { tm } = useI18n();
 const categories: string[] = Object.values(Category);
@@ -49,7 +50,10 @@ const resetFilters = () => {
 };
 
 const projects = computed<TProject[]>(() => {
-    return tm("homepage.dev_projects.projects") as TProject[];
+    const projectsDescriptions = tm("homepage.dev_projects.projects") as TProject[];
+    return projectsList.map(project => {
+        return {...project, ...projectsDescriptions[project.id]}
+    })
 });
 
 const sortByUpdateDate = (projects: TProject[]) => {

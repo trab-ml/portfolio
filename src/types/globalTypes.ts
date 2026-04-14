@@ -12,7 +12,7 @@ export type Category = (typeof Category)[keyof typeof Category];
 export type TProject = {
   id: number;
   title: string;
-  description: string;
+  description?: string;
   imageUrl: string;
   projectUrl?: string;
   repositoryUrl?: string;
