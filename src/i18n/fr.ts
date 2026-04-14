@@ -1,3 +1,5 @@
+import { common } from "@/i18n/common";
+
 export const fr = {
     abbreviation: "Fr",
     header: {
@@ -136,4 +138,5 @@ export const fr = {
         description:
             "Page 'non trouvée' du site web de mon portfolio hébergé sur github.",
     },
+    ...common,
 };

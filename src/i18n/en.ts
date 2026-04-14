@@ -1,5 +1,8 @@
+import { common } from "@/i18n/common";
+
 export const en = {
     abbreviation: "En",
+    awake: ["https://lasso-v1-0-0.onrender.com/"],
     header: {
         nav: {
             menu: "Menu",
@@ -128,17 +131,11 @@ export const en = {
                 },
             },
         },
-        footer: {
-            contact: {
-                email: "btra2420{'@'}gmail.com",
-                linkedin: "https://www.linkedin.com/in/bernart0123456789/",
-                github: "https://github.com/trab-ml",
-            },
-        },
     },
     notFoundPage: {
         title: "404 Page not found !",
         callToAction: "Go back home",
         description: "My portfolio website hosted on github 'not found page'.",
     },
+    ...common,
 };

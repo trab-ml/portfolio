@@ -1,10 +1,10 @@
 <template>
     <section class="flex flex-col items-center sm:flex-row sm:items-start">
-        <h1 class="text-xl text-black px-2 font-bold sm:px-0 sm:w-1/3 sm:mt-4 md:w-full md:px-0 lg:text-3xl">
+        <h1
+            class="text-xl text-black px-2 font-bold sm:px-0 sm:w-1/3 sm:mt-4 md:w-full md:px-0 lg:text-3xl"
+        >
             {{ $t("homepage.title.partOne") }} <br />
-            <span class="font-light">{{
-                $t("homepage.title.partTwo")
-            }}</span>
+            <span class="font-light">{{ $t("homepage.title.partTwo") }}</span>
             <br />
             <span class="font-semi-bold">{{
                 $t("homepage.title.partThree")
@@ -64,4 +64,14 @@ import Experiences from "../molecules/Experiences.vue";
 import Projects from "../molecules/Projects.vue";
 import FileDownloadOutlineIcon from "icons/FileDownloadOutline.vue";
 import EyeOutlineIcon from "icons/EyeOutline.vue";
+import {awake} from "@/scripts/awake";
+import { onMounted } from "vue";
+import { useI18n } from "vue-i18n";
+
+const { tm } = useI18n();
+const projectsToAwake = tm("awake") as string[];
+
+onMounted(async () => {
+    awake(projectsToAwake);
+});
 </script>
