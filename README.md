@@ -20,15 +20,15 @@ git subtree push --prefix dist origin gh-pages
 
 ## Mock
 
-![Portfolio Screenshot](./public/assets/mock.png)
+![Portfolio Screenshot](./public/mock.png)
 
 ## Alive-Mock
 
-![Portfolio Screenshot](./public/assets/alive-mock.png)
+![Portfolio Screenshot](./public/alive-mock.png)
 
 ## Components Overview
 
-![Components Overview](./public/assets/components-overview.png)
+![Components Overview](./public/components-overview.png)
 
 ## Tricky issues
 
