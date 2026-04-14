@@ -26,10 +26,14 @@ import Experience from "@/atoms/Experience.vue";
 import { useI18n } from "vue-i18n";
 import { type TInternShip } from "@/types/globalTypes";
 import { computed } from "vue";
+import {experiencesList} from "@/data/experiences";
 
 const { tm } = useI18n();
 
 const experiences = computed<TInternShip[]>(() => {
-    return tm("homepage.professional_experience.experiences") as TInternShip[];
+    const i18nData = tm("homepage.professional_experience.experiences") as TInternShip[];
+    return experiencesList.map(xp => {
+        return {...xp, ...i18nData[xp.id]}
+    })
 });
 </script>

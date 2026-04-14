@@ -29,66 +29,32 @@ export const en = {
         qrCode: "QR-CODE site web",
         professional_experience: {
             title: "Work Experience",
-            experiences: [
-                {
+            experiences: {
+                1: {
                     title: "Full Stack Developer",
-                    company: "Nextoo",
-                    companyWebsite: "https://nextoo.fr/",
                     startDate: "31 March 2025",
                     endDate: "31 August 2025",
                     period: "5 months",
                     description:
                         "I participated in an intensive technical training where experienced tech leads supported me on key technologies like Spring, Vue, and DevOps practices. At the heart of the project, I contributed to the development of a business application in an agile team, moving from designing new features to resolving critical bugs that impacted the user experience. This experience allowed me to evolve in a collaborative environment where the programming duo and regular code reviews enriched my vision of quality software development.",
-                    technologies: [
-                        "JavaScript",
-                        "Vue.js",
-                        "Vuetify",
-                        "TypeScript",
-                        "Node.js",
-                        "Java",
-                        "Spring Boot",
-                        "Hibernate",
-                        "Docker",
-                        "Docker Compose",
-                        "PostgreSql",
-                    ],
                 },
-                {
+                2: {
                     title: "Backend Developer",
-                    company: "Wezaart",
-                    companyWebsite:
-                        "https://www.linkedin.com/company/wezaart/about/",
                     startDate: "02 April 2024",
                     endDate: "24 May 2024",
                     period: "2 months",
                     description:
                         "I dove into REST API design with TypeScript and NestJS, discovering the art of PostgreSQL data modeling through Prisma ORM. The most rewarding technical challenge was conducting benchmarks that revealed unexpected optimization opportunities, resulting in performance gains on our most critical queries. Quickly integrated into a dynamic product team, I was able to participate in creative brainstorming and co-write technical specifications, while gradually gaining autonomy over my architectural choices.",
-                    technologies: [
-                        "JavaScript",
-                        "Nest.js",
-                        "TypeScript",
-                        "Node.js",
-                        "Prisma",
-                    ],
                 },
-                {
+                3: {
                     title: "Frontend Developer",
-                    company: "StudentBank",
-                    companyWebsite:
-                        "https://lescalator.com/startups/student-bank/",
                     startDate: "03 April 2025",
                     endDate: "30 May 2025",
                     period: "2 months",
                     description:
                         "I transformed Figma mockups into vibrant, responsive web interfaces, mastering the React.js ecosystem and Tailwind CSS to create fluid and performant user experiences. The technical challenge was to develop a suite of reusable and fully responsive components, ensuring a consistent experience across all devices. Collaborating closely with the design and product teams in an agile framework, I helped raise quality standards by optimizing every performance detail to offer frictionless navigation for end users.",
-                    technologies: [
-                        "JavaScript",
-                        "React.js",
-                        "Node.js",
-                        "Bootstrap",
-                    ],
                 },
-            ],
+            },
         },
         dev_projects: {
             title: "Projects",

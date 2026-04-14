@@ -30,66 +30,32 @@ export const fr = {
         qrCode: "QR-CODE du site",
         professional_experience: {
             title: "Expériences professionnelles",
-            experiences: [
-                {
+            experiences: {
+                1: {
                     title: "Dévelopeur Full Stack",
-                    company: "Nextoo",
-                    companyWebsite: "https://nextoo.fr/",
                     startDate: "31 Mars 2025",
                     endDate: "31 Août 2025",
                     period: "5 mois",
                     description:
                         "J'ai participé à une formation technique intensive où des responsables techniques expérimentés (Tech Leads) m'ont accompagné sur des technologies clés comme Spring, Vue et les pratiques DevOps. Au cœur du projet, j'ai contribué au développement d'une application métier au sein d'une équipe agile, passant de la conception de nouvelles fonctionnalités à la résolution de bugs critiques impactant l'expérience utilisateur. Cette expérience m'a permis d'évoluer dans un environnement collaboratif où le duo de développeurs et les revues de code régulières ont enrichi ma vision d'un développement logiciel de qualité.",
-                    technologies: [
-                        "JavaScript",
-                        "Vue.js",
-                        "Vuetify",
-                        "TypeScript",
-                        "Node.js",
-                        "Java",
-                        "Spring Boot",
-                        "Hibernate",
-                        "Docker",
-                        "Docker Compose",
-                        "PostgreSql",
-                    ],
                 },
-                {
+                2: {
                     title: "Dévelopeur Backend",
-                    company: "Wezaart",
-                    companyWebsite:
-                        "https://www.linkedin.com/company/wezaart/about/",
                     startDate: "02 Avril 2024",
                     endDate: "24 Mai 2024",
                     period: "2 mois",
                     description:
                         "Je me suis lancé dans la conception d'API REST avec TypeScript et NestJS, découvrant l'art de la modélisation de données PostgreSQL grâce à Prisma ORM. Le défi technique le plus enrichissant a été la réalisation de benchmarks qui ont révélé des opportunités d'optimisation inattendues, générant des gains de performance sur nos requêtes les plus critiques. Rapidement intégré à une équipe produit dynamique, j'ai pu participer à des brainstormings créatifs et co-rédiger des spécifications techniques, tout en gagnant progressivement en autonomie sur mes choix architecturaux.",
-                    technologies: [
-                        "JavaScript",
-                        "Nest.js",
-                        "TypeScript",
-                        "Node.js",
-                        "Prisma",
-                    ],
                 },
-                {
+                3: {
                     title: "Dévelopeur Frontend",
-                    company: "StudentBank",
-                    companyWebsite:
-                        "https://lescalator.com/startups/student-bank/",
                     startDate: "03 Avril 2025",
                     endDate: "30 Mai 2025",
                     period: "2 mois",
                     description:
                         "J'ai transformé des maquettes Figma en interfaces web dynamiques et réactives, maîtrisant l'écosystème React.js et Tailwind CSS pour créer des expériences utilisateur fluides et performantes. Le défi technique consistait à développer une suite de composants réutilisables et entièrement réactifs, garantissant une expérience cohérente sur tous les appareils. En étroite collaboration avec les équipes design et produit dans un cadre agile, j'ai contribué à améliorer les standards de qualité en optimisant chaque détail de performance afin d'offrir une navigation fluide aux utilisateurs finaux.",
-                    technologies: [
-                        "JavaScript",
-                        "React.js",
-                        "Node.js",
-                        "Bootstrap",
-                    ],
                 },
-            ],
+            },
         },
         dev_projects: {
             title: "Projets",

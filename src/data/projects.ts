@@ -143,7 +143,7 @@ export const projectsList: TProject[] = [
         projectUrl: "",
         repositoryUrl: "https://github.com/trab-ml/tmdb",
         category: "Fullstack",
-        technologies: ["Java", "Spring Boot", "Vue", "TypeScript", "Vuetify"],
+        technologies: ["Java", "Spring Boot", "VueJS", "TypeScript", "Vuetify"],
         updatedAt: "2026-02-14",
     },
 ];
