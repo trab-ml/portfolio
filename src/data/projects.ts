@@ -146,4 +146,14 @@ export const projectsList: TProject[] = [
         technologies: ["Java", "Spring Boot", "VueJS", "TypeScript", "Vuetify"],
         updatedAt: "2026-02-14",
     },
+    {
+        id: 16,
+        title: "Ethical Architect",
+        imageUrl: "ethical-architect.png",
+        projectUrl: "https://ethicalarchitect.fr/",
+        repositoryUrl: "",
+        category: "Front",
+        technologies: ["VueJS", "TypeScript", "Tailwind CSS", "daisyUI"],
+        updatedAt: "2026-05-05",
+    },
 ];
