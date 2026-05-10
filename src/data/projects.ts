@@ -139,7 +139,7 @@ export const projectsList: TProject[] = [
     {
         id: 15,
         title: "Movie Database",
-        imageUrl: "project-default-img.png",
+        imageUrl: "tmdb.png",
         projectUrl: "",
         repositoryUrl: "https://github.com/trab-ml/tmdb",
         category: "Fullstack",
