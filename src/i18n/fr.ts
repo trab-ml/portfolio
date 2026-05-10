@@ -129,6 +129,10 @@ export const fr = {
                     description:
                         "Application de recommandation de films personnalisée avec Spring Boot et Vue.js.",
                 },
+                16: {
+                    description:
+                        "Ethical Architect est un site web moderne et professionnel dédié à la micro-entreprise, conçu pour mettre en valeur l'expertise, inspirer confiance et convertir les visiteurs en clients.",
+                },
             },
         },
     },

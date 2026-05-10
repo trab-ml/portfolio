@@ -129,6 +129,10 @@ export const en = {
                     description:
                         "Personalized movie recommendation app built with Spring Boot and Vue.js.",
                 },
+                16: {
+                    description:
+                        "The Ethical Architect is a modern, professional website dedicated to micro-entrepreneurship, designed to showcase expertise, inspire trust, and convert visitors into clients.",
+                },
             },
         },
     },
