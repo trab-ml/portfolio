@@ -10,3 +10,8 @@
         }}</a>
     </div>
 </template>
+
+<script setup lang="ts">
+import { usePageHead } from "@/composables/usePageHead.ts";
+usePageHead("notFoundPage.metaTitle", "notFoundPage.metaDescription");
+</script>

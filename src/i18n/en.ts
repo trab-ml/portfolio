@@ -15,7 +15,9 @@ export const en = {
         },
     },
     homepage: {
-        description: "My portfolio website hosted on github 'welcome page'.",
+        metaTitle: "Full Stack Web Developer - Web Artist",
+        metaDescription:
+            "As a Full Stack Developer, I design modern applications used in production with a constant focus on reliability, performance, and user experience.",
         title: {
             partOne: "Have a project idea or a specific business need ?",
             partTwo:
@@ -137,9 +139,11 @@ export const en = {
         },
     },
     notFoundPage: {
-        title: "404 Page not found !",
+        metaTitle: "404 Page not found - https://trab-ml.github.io/portfolio/",
+        metaDescription:
+            "As a Full Stack Developer, I design modern applications used in production with a constant focus on reliability, performance, and user experience.",
+        title: "404 Page not found",
         callToAction: "Go back home",
-        description: "My portfolio website hosted on github 'not found page'.",
     },
     ...common,
 };

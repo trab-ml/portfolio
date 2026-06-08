@@ -64,9 +64,12 @@ import Experiences from "../molecules/Experiences.vue";
 import Projects from "../molecules/Projects.vue";
 import FileDownloadOutlineIcon from "icons/FileDownloadOutline.vue";
 import EyeOutlineIcon from "icons/EyeOutline.vue";
-import {awake} from "@/scripts/awake";
+import { awake } from "@/scripts/awake";
 import { onMounted } from "vue";
 import { useI18n } from "vue-i18n";
+import { usePageHead } from "@/composables/usePageHead.ts";
+
+usePageHead("homepage.metaTitle", "homepage.metaDescription");
 
 const { tm } = useI18n();
 const projectsToAwake = tm("awake") as string[];
