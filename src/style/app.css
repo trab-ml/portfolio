@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @plugin "daisyui";
+/* BE SELECTIVE TALKING ABOUT NEEDED DAISYUI MODULES */
 
 :root {
     --component-bg-primary-color: #f9fafb;
