@@ -15,7 +15,7 @@ export const en = {
         },
     },
     homepage: {
-        metaTitle: "Full Stack Web Developer - Web Artist",
+        metaTitle: "Full Stack Web Developer - Portfolio",
         metaDescription:
             "As a Full Stack Developer, I design modern applications used in production with a constant focus on reliability, performance, and user experience.",
         title: {

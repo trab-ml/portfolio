@@ -14,7 +14,7 @@ export const fr = {
         },
     },
     homepage: {
-        metaTitle: "Développeur Web Full Stack - Artisan du Web",
+        metaTitle: "Développeur Web Full Stack - Portfolio",
         metaDescription:
             "Développeur Full Stack, je conçois des applications modernes utilisées en production avec un souci constant de fiabilibé, de performance et d'expérience utilisateur.",
         title: {

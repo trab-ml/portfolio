@@ -1,23 +1,133 @@
 <!doctype html>
 <html lang="fr" data-theme="light">
     <head>
-        <meta name="google-site-verification" content="5hKM7mYyRjYLtipo8mCPd_1Y9ybCIBMir08xHnlD7QY" />
+        <meta
+            name="google-site-verification"
+            content="5hKM7mYyRjYLtipo8mCPd_1Y9ybCIBMir08xHnlD7QY"
+        />
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
             name="description"
-            content="Le site web de mon portfolio hébergé sur github. My portfolio website hosted on github."
+            content="Développeur Web Full Stack, je conçois des applications modernes utilisées en production avec un souci constant de fiabilibé, de performance et d'expérience utilisateur."
         />
+        <meta name="robots" content="index,follow" />
+        <meta name="googlebot" content="index,follow" />
+        <meta name="geo.region" content="FR" />
+        <meta name="geo.country" content="France" />
+        <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+        <link rel="canonical" href="https://trab-ml.github.io/portfolio/" />
+        <link rel="author" href="https://trab-ml.github.io/portfolio/" />
         <link rel="icon" type="image/svg+xml" href="/coding-tag-on-pc.png" />
-        <title>Web Artist</title>
+
+        <title>Développeur Web Full Stack - Portfolio</title>
+
         <script type="module">
             import { setUpInitialTheme } from "./src/utils/themeUtils.ts";
-
             setUpInitialTheme();
+        </script>
+
+        <!-- Open Graph -->
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="fr_FR" />
+        <meta
+            property="og:url"
+            content="https://trab-ml.github.io/portfolio/"
+        />
+        <meta
+            property="og:site_name"
+            content="Développeur Web Full Stack - Portfolio"
+        />
+        <meta
+            property="article:publisher"
+            content="https://www.linkedin.com/in/bernart0123456789/"
+        />
+        <meta
+            property="article:modified_time"
+            content="2026-06-09T20:00:00+00:00"
+        />
+        <meta
+            property="og:title"
+            content="Développeur Web Full Stack - Création de Sites &
+            Applications Web"
+        />
+        <meta
+            property="og:description"
+            content="Développeur Web Full-Stack, je suis spécialisé dans les sites sur mesure, portfolios et landing pages pour améliorer votre visibilité et attirer de nouveaux clients. Discutons-en !"
+        />
+        <meta
+            property="og:image"
+            content="https://trab-ml.github.io/portfolio/portfolio-homepage.png"
+        />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="600" />
+        <meta property="og:image:type" content="image/png" />
+        <meta
+            property="og:image:alt"
+            content="Développeur Web Full-Stack - Portfolio"
+        />
+
+        <!-- Twitter / X Card -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+            name="twitter:title"
+            content="Développeur Web Full-Stack - Portfolio"
+        />
+        <meta
+            name="twitter:description"
+            content="Développeur Web Full-Stack, je suis spécialisé dans les sites sur mesure, portfolios et landing pages pour améliorer votre visibilité et attirer de nouveaux clients. Discutons-en !"
+        />
+        <meta
+            name="twitter:image"
+            content="https://trab-ml.github.io/portfolio/portfolio-homepage.png"
+        />
+
+        <!-- Structured data -->
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                "@id": "https://trab-ml.github.io/portfolio/#projects",
+                "name": "Développeur Web Full Stack",
+                "url": "https://ethicalarchitect.fr",
+                "image": "https://trab-ml.github.io/portfolio/portfolio-homepage.png",
+                "description": "Développeur web full-stack freelance spécialisé dans la création de sites web performants et optimisés SEO.",
+                "founder": {
+                    "@type": "Person",
+                    "name": "Développeur Web Full Stack"
+                },
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "10 Pl. Victor Hassebroucq",
+                    "addressLocality": "Tourcoing",
+                    "addressRegion": "Nord",
+                    "postalCode": "59200",
+                    "addressCountry": "FR"
+                },
+                "contactPoint": {
+                    "@type": "ContactPoint",
+                    "contactType": "customer service",
+                    "email": "btra2420@gmail.com",
+                    "availableLanguage": ["fr", "en"]
+                },
+                "areaServed": {
+                    "@type": "Country",
+                    "name": "France"
+                },
+                "serviceType": "Développement web",
+                "sameAs": ["https://www.linkedin.com/in/bernart0123456789/"]
+            }
         </script>
     </head>
     <body>
         <div id="app"></div>
+        <noscript>
+            <p>
+                Ce site requiert JavaScript. Veuillez l'activer dans votre
+                navigateur pour accéder au contenu.
+            </p>
+        </noscript>
         <script type="module" src="/src/main.ts"></script>
     </body>
 </html>
