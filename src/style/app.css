@@ -1,6 +1,9 @@
 @import "tailwindcss";
-@plugin "daisyui";
-/* BE SELECTIVE TALKING ABOUT NEEDED DAISYUI MODULES */
+@plugin "daisyui" {
+    themes: light --default, dark --prefersdark;
+    include: navbar, menu, button, mockup, code, timeline, card, tooltip, badge;
+    exclude: components;
+}
 
 :root {
     --component-bg-primary-color: #f9fafb;
