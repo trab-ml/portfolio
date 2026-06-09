@@ -1,6 +1,6 @@
 <template>
     <div
-        class="card bg-base-100 w-full shadow-sm border border-solid"
+        class="card bg-base-100 w-full rounded-4xl shadow-sm border-solid border-4 border-base-300 hover:border-black/65"
     >
         <figure class="h-68 overflow-hidden bg-white">
             <a :href="props.project.imageUrl" target="_blank">

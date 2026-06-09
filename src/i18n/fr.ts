@@ -14,8 +14,9 @@ export const fr = {
         },
     },
     homepage: {
-        description:
-            "La page 'd\'accueil' du site web de mon portfolio hébergé sur github.",
+        metaTitle: "Développeur Web Full Stack - Portfolio",
+        metaDescription:
+            "Développeur Full Stack, je conçois des applications modernes utilisées en production avec un souci constant de fiabilibé, de performance et d'expérience utilisateur.",
         title: {
             partOne: "Une idée de projet ou un besoin métier concret ?",
             partTwo:
@@ -137,10 +138,12 @@ export const fr = {
         },
     },
     notFoundPage: {
-        title: "404 Page non trouvée !",
+        metaTitle:
+            "404 Page non trouvée - https://trab-ml.github.io/portfolio/",
+        metaDescription:
+            "Développeur Full Stack, je conçois des applications modernes utilisées en production avec un souci constant de fiabilibé, de performance et d'expérience utilisateur.",
+        title: "404 Page non trouvée",
         callToAction: "Retourner à l'accueil",
-        description:
-            "Page 'non trouvée' du site web de mon portfolio hébergé sur github.",
     },
     ...common,
 };
