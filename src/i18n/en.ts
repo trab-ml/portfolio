@@ -101,37 +101,17 @@ export const en = {
                 },
                 8: {
                     description:
-                        "Modern frontend integration for a professional company website.",
+                        "Unix mini-shell in C with command execution and process management.",
                 },
                 9: {
                     description:
-                        "Elegant showcase website for a real estate agency.",
+                        "Non-profit website promoting equal access to quality education.",
                 },
                 10: {
                     description:
-                        "Ready-to-use and customizable admin dashboard template.",
-                },
-                11: {
-                    description:
-                        "Full frontend integration of a real estate website with a clean UX.",
-                },
-                12: {
-                    description:
-                        "Real estate platform to easily browse and search for properties.",
-                },
-                13: {
-                    description:
-                        "Unix mini-shell in C with command execution and process management.",
-                },
-                14: {
-                    description:
-                        "Non-profit website promoting equal access to quality education.",
-                },
-                15: {
-                    description:
                         "Personalized movie recommendation app built with Spring Boot and Vue.js.",
                 },
-                16: {
+                11: {
                     description:
                         "The Ethical Architect is a modern, professional website dedicated to micro-entrepreneurship, designed to showcase expertise, inspire trust, and convert visitors into clients.",
                 },
