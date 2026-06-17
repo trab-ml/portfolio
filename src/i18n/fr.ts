@@ -100,37 +100,17 @@ export const fr = {
                 },
                 8: {
                     description:
-                        "Intégration front moderne pour la création d'un site vitrine d'entreprise.",
+                        "Mini-shell Unix en C permettant l'exécution de commandes et la gestion des processus.",
                 },
                 9: {
                     description:
-                        "Site vitrine élégant pour valoriser les services d'une agence immobilière.",
+                        "Site web engagé pour une association œuvrant pour l'égalité d'accès à l'éducation.",
                 },
                 10: {
                     description:
-                        "Template de dashboard administrateur modulable et prêt à l'emploi.",
-                },
-                11: {
-                    description:
-                        "Intégration complète d'un site immobilier avec une interface claire et performante.",
-                },
-                12: {
-                    description:
-                        "Plateforme immobilière permettant de rechercher et consulter des biens facilement.",
-                },
-                13: {
-                    description:
-                        "Mini-shell Unix en C permettant l'exécution de commandes et la gestion des processus.",
-                },
-                14: {
-                    description:
-                        "Site web engagé pour une association œuvrant pour l'égalité d'accès à l'éducation.",
-                },
-                15: {
-                    description:
                         "Application de recommandation de films personnalisée avec Spring Boot et Vue.js.",
                 },
-                16: {
+                11: {
                     description:
                         "Ethical Architect est un site web moderne et professionnel dédié à la micro-entreprise, conçu pour mettre en valeur l'expertise, inspirer confiance et convertir les visiteurs en clients.",
                 },
