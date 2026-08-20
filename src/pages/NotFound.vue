@@ -12,6 +12,7 @@
 </template>
 
 <script setup lang="ts">
-import { usePageHead } from "@/composables/usePageHead.ts";
-usePageHead("notFoundPage.metaTitle", "notFoundPage.metaDescription");
+import { useSiteHead } from "@/composables/useSiteHead";
+
+useSiteHead("notFoundPage.metaTitle", "notFoundPage.metaDescription");
 </script>

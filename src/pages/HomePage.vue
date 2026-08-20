@@ -1,5 +1,8 @@
 <template>
-    <section class="flex flex-col items-center sm:flex-row sm:items-start">
+    <section
+        id="website"
+        class="flex flex-col items-center sm:flex-row sm:items-start"
+    >
         <h1
             class="text-xl text-black px-2 font-bold sm:px-0 sm:w-1/3 sm:mt-4 md:w-full md:px-0 lg:text-3xl"
         >
@@ -10,7 +13,7 @@
                 $t("homepage.title.partThree")
             }}</span>
         </h1>
-        <div class="w-full mt-1 sm:w-2/3 sm:mt-12 md:w-full">
+        <div id="person" class="w-full mt-1 sm:w-2/3 sm:mt-12 md:w-full">
             <div class="mockup-code">
                 <pre data-prefix="1"><code>const profile = {</code></pre>
                 <pre
@@ -64,17 +67,7 @@ import Experiences from "../molecules/Experiences.vue";
 import Projects from "../molecules/Projects.vue";
 import FileDownloadOutlineIcon from "icons/FileDownloadOutline.vue";
 import EyeOutlineIcon from "icons/EyeOutline.vue";
-import { awake } from "@/scripts/awake";
-import { onMounted } from "vue";
-import { useI18n } from "vue-i18n";
-import { usePageHead } from "@/composables/usePageHead.ts";
+import { useSiteHead } from "@/composables/useSiteHead";
 
-usePageHead("homepage.metaTitle", "homepage.metaDescription");
-
-const { tm } = useI18n();
-const projectsToAwake = tm("awake") as string[];
-
-onMounted(async () => {
-    awake(projectsToAwake);
-});
+useSiteHead("homepage.metaTitle", "homepage.metaDescription");
 </script>
