@@ -7,9 +7,17 @@
     "types": ["node"],
     "compilerOptions": {
         "composite": true,
+        "module": "ESNext",
+        "moduleResolution": "Bundler",
+        "allowImportingTsExtensions": true,
+        "noEmit": true,
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
         "paths": {
             "@/*": ["./src/*"],
             "icons": ["./node_modules/vue-material-design-icons"]
         }
-    },
+    }
 }

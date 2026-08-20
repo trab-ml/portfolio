@@ -1,21 +1,25 @@
 {
-    "extends": "./tsconfig.json",
+    "extends": "@vue/tsconfig/tsconfig.dom.json",
     "compilerOptions": {
-        "outDir": "./dist/types",
-        "rootDir": "./src",
-        "noEmit": true,
+        "composite": true,
         "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
 
+        "module": "ESNext",
+        "moduleResolution": "Bundler",
+
+        "allowImportingTsExtensions": true,
+        "verbatimModuleSyntax": true,
+        "moduleDetection": "force",
+
         "strict": true,
-        "noUnusedLocals": true,
-        "noUnusedParameters": true,
-        "erasableSyntaxOnly": true,
-        "noFallthroughCasesInSwitch": true,
-        "noUncheckedSideEffectImports": true,
+        "skipLibCheck": true,
 
         "paths": {
-            "@/*": ["./src/*"]
-        }
+            "@/*": ["./src/*"],
+            "icons": ["./node_modules/vue-material-design-icons/*"]
+        },
+
+        "types": ["vite/client"]
     },
     "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"]
 }

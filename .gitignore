@@ -25,5 +25,6 @@ dist-ssr
 .dist
 dist
 vite.config.js
+.vite-ssg*
 
 playwright-report

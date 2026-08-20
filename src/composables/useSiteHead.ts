@@ -7,15 +7,14 @@ import {
 } from "@unhead/schema-org/vue";
 import { useI18n } from "vue-i18n";
 
-const SITE_URL = "https://trab-ml.github.io/portfolio/";
-const AUTHOR_NAME = "Bernard T.";
-const LINKEDIN_URL = "https://www.linkedin.com/in/bernart0123456789/";
-const OG_IMAGE = `${SITE_URL}portfolio-homepage.png`;
-
 export function useSiteHead(titleKey: string, descriptionKey: string) {
     const { t } = useI18n();
     const JOB_TITLE = () => t(titleKey);
     const DESCRIPTION = () => t(descriptionKey);
+    const SITE_URL = t('footer.contact.websiteUrl');
+    const AUTHOR_NAME = t('footer.contact.author');
+    const LINKEDIN_URL = t('footer.contact.linkedin');
+    const OG_IMAGE = `${SITE_URL}portfolio-homepage.png`;
 
     useHead({
         htmlAttrs: {
