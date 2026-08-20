@@ -14,8 +14,8 @@ const OG_IMAGE = `${SITE_URL}portfolio-homepage.png`;
 
 export function useSiteHead(titleKey: string, descriptionKey: string) {
     const { t } = useI18n();
-    const JOB_TITLE = t(titleKey);
-    const DESCRIPTION = t(descriptionKey);
+    const JOB_TITLE = () => t(titleKey);
+    const DESCRIPTION = () => t(descriptionKey);
 
     useHead({
         htmlAttrs: {
