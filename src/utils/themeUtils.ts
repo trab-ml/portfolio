@@ -1,20 +1,25 @@
 import { ref } from "vue";
 
 const THEME = "theme";
-const LIGHT: string = "light" as const;
-export const DARK: string = "dark" as const;
+const LIGHT = "light" as const;
+export const DARK = "dark" as const;
 const DATA_THEME = "data-theme";
 
 export type TThemeMode = typeof LIGHT | typeof DARK;
 
-export const theme = ref<TThemeMode>(
-  (localStorage.getItem(THEME) as TThemeMode) ?? LIGHT,
-);
+export const theme = ref<TThemeMode>(LIGHT);
 
-const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+const isBrowser = typeof window !== "undefined";
 
-export const applyTheme = (newTheme: TThemeMode, persist = true) => {
+export const applyTheme = (
+  newTheme: TThemeMode,
+  persist = true,
+) => {
   theme.value = newTheme;
+
+  if (!isBrowser) {
+    return;
+  }
 
   if (persist) {
     localStorage.setItem(THEME, newTheme);
@@ -31,12 +36,20 @@ export const toggleThemeMode = () => {
 };
 
 export const setUpInitialTheme = () => {
+  if (!isBrowser) {
+    return;
+  }
+
   const savedTheme = localStorage.getItem(THEME) as TThemeMode | null;
 
-  if (savedTheme) {
+  if (savedTheme === LIGHT || savedTheme === DARK) {
     applyTheme(savedTheme);
     return;
   }
+
+  const mediaQuery = window.matchMedia(
+    "(prefers-color-scheme: dark)",
+  );
 
   applyTheme(mediaQuery.matches ? DARK : LIGHT, false);
 
@@ -44,7 +57,10 @@ export const setUpInitialTheme = () => {
     const stillNoUserChoice = !localStorage.getItem(THEME);
 
     if (stillNoUserChoice) {
-      applyTheme(event.matches ? DARK : LIGHT, false);
+      applyTheme(
+        event.matches ? DARK : LIGHT,
+        false,
+      );
     }
   });
 };
