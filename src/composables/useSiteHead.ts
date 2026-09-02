@@ -47,7 +47,6 @@ export function useSiteHead(titleKey: string, descriptionKey: string) {
 
     useSeoMeta({
         title: JOB_TITLE,
-        titleTemplate: "%s | Portfolio",
 
         description: DESCRIPTION,
 
@@ -61,10 +60,10 @@ export function useSiteHead(titleKey: string, descriptionKey: string) {
         ogImageWidth: 1200,
         ogImageHeight: 630,
         ogImageType: "image/png",
-        ogImageAlt: `${JOB_TITLE} - Portfolio`,
+        ogImageAlt: `${JOB_TITLE}`,
 
         twitterCard: "summary_large_image",
-        twitterTitle: `${JOB_TITLE} - Portfolio`,
+        twitterTitle: `${JOB_TITLE}`,
         twitterDescription: DESCRIPTION,
         twitterImage: OG_IMAGE,
     });
@@ -84,7 +83,7 @@ export function useSiteHead(titleKey: string, descriptionKey: string) {
         defineWebPage({
             "@id": `${SITE_URL}#webpage`,
             url: SITE_URL,
-            name: `${JOB_TITLE} | Portfolio`,
+            name: `${JOB_TITLE}`,
             description: DESCRIPTION,
             inLanguage: "fr-FR",
             isPartOf: {
