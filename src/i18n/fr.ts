@@ -16,7 +16,7 @@ export const fr = {
     homepage: {
         metaTitle: "Développeur Web Full Stack - Portfolio",
         metaDescription:
-            "Développeur Full Stack, je conçois des applications modernes utilisées en production avec un souci constant de fiabilibé, de performance et d'expérience utilisateur.",
+            "Développeur Full Stack, je conçois des applications modernes utilisées en production avec un souci constant de fiabilité, de performance et d'expérience utilisateur.",
         title: {
             partOne: "Une idée de projet ou un besoin métier concret ?",
             partTwo:
@@ -25,7 +25,7 @@ export const fr = {
                 "Discutons de la manière dont je peux contribuer à vos enjeux !",
         },
         firstname: "Bernard",
-        lastname: "TRAORÉ",
+        lastname: "T.",
         job: "Ingénieur Logiciel",
         status: "Disponible pour travailler",
         mobility: "France entière",

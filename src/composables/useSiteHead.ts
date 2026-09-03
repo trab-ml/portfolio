@@ -54,16 +54,16 @@ export function useSiteHead(titleKey: string, descriptionKey: string) {
         ogLocale: "fr_FR",
         ogUrl: SITE_URL,
         ogSiteName: "Portfolio",
-        ogTitle: `${JOB_TITLE}`,
+        ogTitle: JOB_TITLE,
         ogDescription: DESCRIPTION,
         ogImage: OG_IMAGE,
         ogImageWidth: 1200,
         ogImageHeight: 630,
         ogImageType: "image/png",
-        ogImageAlt: `${JOB_TITLE}`,
+        ogImageAlt: JOB_TITLE,
 
         twitterCard: "summary_large_image",
-        twitterTitle: `${JOB_TITLE}`,
+        twitterTitle: JOB_TITLE,
         twitterDescription: DESCRIPTION,
         twitterImage: OG_IMAGE,
     });
@@ -83,7 +83,7 @@ export function useSiteHead(titleKey: string, descriptionKey: string) {
         defineWebPage({
             "@id": `${SITE_URL}#webpage`,
             url: SITE_URL,
-            name: `${JOB_TITLE}`,
+            name: JOB_TITLE,
             description: DESCRIPTION,
             inLanguage: "fr-FR",
             isPartOf: {
