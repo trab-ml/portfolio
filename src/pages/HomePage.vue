@@ -1,6 +1,6 @@
 <template>
     <section
-        id="website"
+        id="webpage"
         class="flex flex-col items-center sm:flex-row sm:items-start"
     >
         <h1
